@@ -1,0 +1,19 @@
+{
+  "source": "metrics_macro.csv",
+  "extraction": "csv.DictReader exact row, no rounding",
+  "rows": [
+    {
+      "year": "2012",
+      "stage": "evaluation",
+      "method": "QRF_CQR_rolling84",
+      "confidence": "0.9",
+      "dimension": "regime",
+      "group": "all",
+      "coverage": "0.919223137973138",
+      "width": "0.43229051621500075",
+      "IS": "0.5657435209485417",
+      "lower_miss": "0.017838064713064712",
+      "upper_miss": "0.06293879731379731"
+    }
+  ]
+}

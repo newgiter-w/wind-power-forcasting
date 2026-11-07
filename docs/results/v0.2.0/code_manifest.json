@@ -1,0 +1,42 @@
+[
+  {
+    "path": "route_a/p0_baseline.py",
+    "sha256": "23a581331482f62a69f70e971baca20f38687fe2fd3a0e995e1f8e8e73d982c6"
+  },
+  {
+    "path": "route_a/p0_protocol.json",
+    "sha256": "dd20aca094d52601f89c78245ee4fb6c153d9f654bdf3dbbe7d002ddd26e35fb"
+  },
+  {
+    "path": "tools/run_route_a.py",
+    "sha256": "d6053d5e65ed5df9b2a7ba7af28fab9418c06ce6074e9da4cd28544407327fb2"
+  },
+  {
+    "path": "tools/runtime_guard/sitecustomize.py",
+    "sha256": "43ce594b20f087a529c1cf1ae5dc2e5d593b08175ebc532671c95e3a6386f362"
+  },
+  {
+    "path": "gefcom_protocol_v2.py",
+    "sha256": "175e1409a568caf6c1e93261528caaae22f272f9a564fa9d13404910950dcf80"
+  },
+  {
+    "path": "gefcom2014_experiment.py",
+    "sha256": "159e7b734a82ecf59f307db901eb10008b960aaafedee59b705817293be59945"
+  },
+  {
+    "path": "run_gefcom_tail_dynamic.py",
+    "sha256": "d6e63683e98cee399e111857c23cc22137e0a7a4109046e90c51a828ee6387e4"
+  },
+  {
+    "path": "strong_baselines.py",
+    "sha256": "d9199cd532113165bbc1073d895aadf47ff2653ab271bd104adecf2a64126ae7"
+  },
+  {
+    "path": "run_p2_2012.py",
+    "sha256": "1ac0928621521bc7a4ae5d9b8e127a1426c011c3dcc3892fcef9e03b3839b5e4"
+  },
+  {
+    "path": "online_calibration.py",
+    "sha256": "83b52779e2d96c457b070735b49806ca9210b1c067eb83f5e294611a91033e7f"
+  }
+]

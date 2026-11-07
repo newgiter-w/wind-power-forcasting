@@ -1,0 +1,13 @@
+{
+  "skill": [
+    "experiment-audit",
+    "result-to-claim"
+  ],
+  "run_id": "2026-11-07_route-a-p0",
+  "agent_id": "/root/p0_integrity_review",
+  "reviewer_model": "gpt-6-astra",
+  "reviewer_reasoning": "ultra",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "timestamp": "2026-11-07T15:57:58.307945+08:00"
+}

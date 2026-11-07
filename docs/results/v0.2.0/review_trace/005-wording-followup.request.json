@@ -1,0 +1,5 @@
+{
+  "tool": "collaboration.followup_task",
+  "target": "/root/p0_integrity_review",
+  "prompt": "Targeted follow-up only: the two wording fixes you requested are now implemented in route_a/p0_report.py and regenerated run/REPORT.md. Re-read REPORT.md lines 7 and 92, plus the existing execution-scope qualifier and protocol_deviations.json. No predictions, endpoints, metrics, splits, or original protocol changed. Please confirm whether findings 1 and 2 are resolved; write a short 005-wording-followup.response.md and 005-wording-followup.verdict.json under run/review_trace, preserving WARN/provisional and the yes/partial scope as appropriate. Record updated REPORT/p0_report hashes so the audit's historical hashes are distinguishable from final release hashes. Do not rerun broad numerical checks or training."
+}

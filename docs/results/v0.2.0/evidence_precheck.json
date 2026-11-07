@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "id": "C1_farms",
+      "value": "17",
+      "source": "experiments\\route_a\\20261107_p0_v020\\completion.json",
+      "status": "verified",
+      "detail": "'17' found in experiments\\route_a\\20261107_p0_v020\\completion.json"
+    },
+    {
+      "id": "C1_refits",
+      "value": "2",
+      "source": "experiments\\route_a\\20261107_p0_v020\\completion.json",
+      "status": "verified",
+      "detail": "'2' found in experiments\\route_a\\20261107_p0_v020\\completion.json"
+    },
+    {
+      "id": "C2_coverage",
+      "value": "0.919223137973138",
+      "source": "experiments\\route_a\\20261107_p0_v020\\evidence_values.json",
+      "status": "verified",
+      "detail": "'0.919223137973138' found in experiments\\route_a\\20261107_p0_v020\\evidence_values.json"
+    },
+    {
+      "id": "C2_IS",
+      "value": "0.5657435209485417",
+      "source": "experiments\\route_a\\20261107_p0_v020\\evidence_values.json",
+      "status": "verified",
+      "detail": "'0.5657435209485417' found in experiments\\route_a\\20261107_p0_v020\\evidence_values.json"
+    }
+  ],
+  "summary": {
+    "verified": 4
+  }
+}

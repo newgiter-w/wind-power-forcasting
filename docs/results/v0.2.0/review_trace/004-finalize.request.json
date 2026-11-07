@@ -1,0 +1,5 @@
+{
+  "tool": "collaboration.send_message",
+  "target": "/root/p0_integrity_review",
+  "prompt": "Please finalize and write the audit/claim judgment files once citations are ready. Publication is waiting on your verdict; retain all WARN limitations and substantive findings. No further broad checks are needed beyond unresolved concerns."
+}

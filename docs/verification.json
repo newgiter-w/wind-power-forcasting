@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.2.0",
   "checks": {
     "isolation": {
       "exit_code": 0,
@@ -14,5 +14,13 @@
       "output": "No broken requirements found."
     }
   },
-  "new_model_experiments": 0
+  "new_model_experiments": 0,
+  "p0": {
+    "frozen_model_replays": 17,
+    "from_scratch_baseline_refits": 2,
+    "seed": 0,
+    "new_method_training": 0,
+    "evidence": "docs/results/v0.2.0/release_checks.json",
+    "scope": "historical retrospective baseline reproduction; no new-method effectiveness claim"
+  }
 }

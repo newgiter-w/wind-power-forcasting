@@ -1,0 +1,153 @@
+# P0 audit: final status
+
+Final verdict: **WARN / provisional**. Baseline reproduction: **yes**; diagnostic causal attribution: **partial**. Requested wording corrections were reviewed and resolved; retained warnings concern scope and availability. The initial review below records the historical wording. The follow-up at the end governs the final report wording.
+
+# Route A P0 independent integrity and result-to-claim review
+
+Date: 2026-11-07. Reviewer: GPT-6-Astra, ultra, fresh same-family review. `review_independence: same-family`; `acceptance_status: provisional`.
+
+**Overall verdict: WARN. Integrity status: warn. Baseline reproduction claim: yes. Diagnostic attribution claim: partial.**
+
+The numerical evidence is consistent and independently reproducible. I found no substantive ground-truth fabrication, prediction-based score normalization, future-label leakage, phantom numerical result, or error in the reported interval/WIS/calendar-bootstrap calculations. The WARN concerns the interpretation of a retrospective, single-seed diagnostic study, two overbroad inferential phrases, and a minor protocol wording mismatch. It does not mean that the reported numbers failed verification.
+
+All relative paths below resolve under `D:/Study/wind_probability_route_a/`. `RUN` means `experiments/route_a/20261107_p0_v020/`. This review read the primary implementation, manifests, saved arrays, raw CSV labels, and tables directly. The executor's interpretation was not treated as evidence. A fresh child reviewer independently checked raw-label provenance and every saved calibration correction; I inspected its script and results. No full baseline training, package installation, publication, or write to the legacy project/shared datasets was performed. The explicitly requested tiny compiled-kernel witness did fit its two-point unit fixture.
+
+## Findings requiring qualification
+
+1. **Reproduction is not a test of training sufficiency.** `RUN/REPORT.md:7` / `route_a/p0_report.py:22` combines exact replay, two deterministic refits and superiority to persistence with the phrase “现有证据不支持‘只是训练没训好’”. Exact replay rules out certain implementation/environment discrepancies; it does not test whether the chosen forest, feature set, training period or hyperparameters are adequate. A badly chosen training configuration can reproduce perfectly. Persistence also receives less information, as the report correctly discloses at `RUN/REPORT.md:51`. Concrete wording fix: “复现检查未发现执行或实现偏差；QRF 相对持续性具有预测能力，但本轮没有检验训练配置是否充分优化，也不能分离训练、模型和 NWP 的贡献。” Keep the existing explicit noncausal limitation.
+
+2. **The width ratio is descriptive, not a lower bound on improvement.** `RUN/REPORT.md:92` / `route_a/p0_report.py:83` correctly reports that raw width is approximately 93%–97% of rolling84 width. The additional inference that changing the calibration layer alone has little scope for substantial narrowing has not been demonstrated. Input-conditional/asymmetric/distribution calibration can change width allocation while preserving a different coverage constraint; this experiment compares only the specified static and rolling signed CQR. Concrete fix: replace that inference with “本次测试的静态/滚动 CQR 没有实现显著收窄；其他校准方案能否在同样覆盖目标下收窄，仍需配对比较。” Do not treat the current width ratio as an impossibility result.
+
+3. **Minor cache-calendar wording mismatch, resolved by disclosure.** `route_a/p0_protocol.json:15` says that the calendar is compared with copied caches. The actual equality assertions cover labels, history, validity, origins, ends, phase, features and imputer statistics (`route_a/p0_baseline.py:212–228`); the full raw calendar is reconstructed and saved at `:256`, with no full cached-calendar equality assertion. Issued origins and target validity are checked, so this does not undermine the evaluated sample membership. Before finalizing this review I reread the appended `RUN/REPORT.md:125`, `RUN/protocol_deviations.json:5–8`, and `route_a/p0_report.py:106`: they accurately disclose the executed scope while preserving the original protocol. No further fix or rerun is required for this issue. The appended paragraph also explicitly says numerical reproduction does not establish sufficient training; this mitigates finding 1, although aligning the opening sentence with that qualifier would improve clarity.
+
+4. **Deployment and causal limits remain material, though mostly already disclosed.** The observations and same-time NWP issue stamps are assumed usable without reporting/release latency; the 2014 NWP issue clock is inferred. Dates were inspected before this P0 study, there is one seed, and only two farms were retrained. These conditions permit a benchmark replay and retrospective description, not new-site, new-date or operational performance certification. The timing of the bootstrap clarification (“before performance analysis”, `RUN/calendar_bootstrap_protocol.json:2`, `RUN/REPORT.md:87`) is a self-reported process statement: saved numerical artifacts verify the corrected algorithm, not an immutable chronology. No new tuning was observed in the P0 code, and I found no evidence of a result-driven change of predictions or calibration endpoints.
+
+## A. Ground-truth provenance — PASS
+
+- GEFCom2014 power is read from the Task15 `TARGETVAR` observations and released solution CSV. The solution is merged to explanatory variables by `ZONEID,TIMESTAMP` with one-to-one and complete-match assertions (`gefcom2014_experiment.py:38–49`). GEFCom2012 power is read from `windpowermeasurements.csv`, column `wp{farm}` (`gefcom_protocol_v2.py:110–112,131`). These are dataset observations, not quantities generated from model predictions.
+- Histories cover `origin−23h..origin`, while targets cover `origin+1h..origin+24h` (`gefcom_protocol_v2.py:77–79`). The code retains raw target values, records complete finite in-range target-day validity, and does not impute labels (`:82–97`). Forecast eligibility uses only history/NWP validity (`:86,91–94`). Invalid future labels do not decide whether a forecast is issued.
+- Training and scoring subsequently require complete valid label days (`gefcom_protocol_v2.py:158–160`; `route_a/p0_baseline.py:124–126,217–220`). This defines a selected, complete-day estimand. It does not measure performance on the unserved dates or partially observed label days.
+- The independent provenance script directly joined all 17 saved arrays to raw CSV time indices: **344,664 target cells and 344,664 history cells match exactly**, including missing values. End timestamps and valid-day flags match independently reconstructed values. Evidence: `RUN/review_trace/independent_provenance_check.py` and `independent_provenance_results.json`.
+- These are custom retrospective splits/metrics, not official competition rankings. No claim of equivalence to an official competition evaluator is warranted or made in the report.
+
+## B. Score normalization and scoring semantics — PASS
+
+- Coverage, width, lower/upper misses and interval score use observed `y`, saved endpoints and the nominal alpha directly (`route_a/p0_baseline.py:95–98,124–143`). The interval score is width plus the two miss penalties multiplied by `2/alpha`. There is no division by a prediction maximum, minimum, range or mean.
+- Power is already in the source capacity scale `[0,1]`; the loader checks physical support rather than fitting a scale from predictions (`gefcom_protocol_v2.py:82–83`). Endpoint clipping to `[0,1]` is explicitly part of the protocol (`route_a/p0_baseline.py:81–86`). This is not score normalization.
+- WIS is `[0.5 |y−raw_q50| + Σ(alpha/2) IS_alpha]/3.5` for three central intervals, exactly as stated at `RUN/REPORT.md:51` and implemented at `route_a/p0_baseline.py:130–148`. Raw seven-quantile pinball is computed directly from observed residuals (`:289–292`). WIS is not reported as CRPS.
+- The independently calibrated intervals can be nonnested, and the fixed raw median need not produce a coherent calibrated distribution with them. The weighted sum still measures the individual quantile/interval forecasts; it must not be presented as a single calibrated CDF. This distinction is explicitly stated in `RUN/REPORT.md:93`. The method has no claimed time-series finite-sample coverage theorem (`RUN/REPORT.md:91`).
+- Macro coverage/width/IS are equal-weight means over farms (`route_a/p0_baseline.py:307–311`), not pooled-hour means. Numeric count columns in `scores_macro.csv` are also farm means; the report expressly warns that these are not totals (`RUN/REPORT.md:121`). Reported totals correctly sum `scores_per_farm.csv` (`route_a/p0_report.py:85–87`).
+- Independently recomputed: 1,224 regime interval rows, 1,224 interval decompositions, 1,224 issue-time conditional rows, 238 pinballs, 102 WIS/MAE/day-coverage/nesting rows, 34 point-metric rows, and both complete macro tables. Maximum interval/conditional/decomposition error is **4.44e−16**, score-row error **6.94e−18**, and pinball/point/macro-table errors **0**. Evidence: `route_a/reviewer_verify_p0.py` and `RUN/review_trace/independent_numerical_verification.json`.
+
+## C. Result existence and report-to-evidence fidelity — PASS
+
+- Both completion records exist and mark completion: `RUN/completion.json:2–9` records 17 farms, 17 frozen replays, two refits, zero new-method training; `RUN/diagnosis_completion.json:2–4` states retrospective descriptive scope and provides the diagnosis-code hash. The source writes completion only after tables/manifests are saved (`route_a/p0_baseline.py:307–322`; `route_a/p0_diagnose.py:163–170`).
+- All **148 input-manifest paths/hashes** (29 raw sources plus copied baseline/cache inputs), all **10 code-manifest hashes**, and the diagnosis hash match current files. Both farm-1 refit artifacts, all 17 prediction arrays, and all 34 calibration files exist. The P0 runner saves refits only after exact seven-quantile prediction and tree-feature/threshold comparisons (`route_a/p0_baseline.py:242–254`). This review did not rerun the expensive refits; it verified the saved evidence and execution logic.
+- The report's key numerical rows match the tables and saved arrays. Examples: `RUN/metrics_macro.csv:90` gives 2012 rolling84 90% coverage **0.919223137973138**, width **0.43229051621500075**, IS **0.5657435209485417**; `:93` gives up-ramp coverage **0.8194965236416806**, upper miss **0.17503979791387092**. `:842,844` give 2014 overall coverage **0.9157589140260004** and near-zero coverage **0.8310460109482951**. These agree with the rounded report (`RUN/REPORT.md:37–42,57–64`).
+- Independently recomputed service totals are 2014 **1,840 calendar / 1,805 issued / 1,768 scorable farm-days**, and 2012 **2,541 / 2,184 / 2,184**. I checked all 68 data-quality rows, all 476 weekday rows, 34 data-support rows and 34 distribution-shift rows. All discrepancies are zero. The 2014 37 issued-but-unscorable days are excluded from performance without target filling; 2012 omissions are 51 Thursdays per farm. The native-batch audit iterates allowed ages 0/12/24h and checks each needed horizon (`route_a/p0_diagnose.py:72–90`); `RUN/nwp_missing_audit.json` reports that even the best legal candidate lacks 12 target hours on these dates. Its code and raw-source hashes were checked; the native-batch missing-hour audit itself was not independently reexecuted in this review.
+- Independently recomputed 90% near-zero transitions are 2014 **209 lost / 106 gained**, with all 209 losses involving negative signed correction; 2012 **21 / 155**, with all 21 losses involving negative correction. These are cell totals, not macro-coverage denominators. All 68 transition rows match exactly (`route_a/p0_diagnose.py:133–141`; `RUN/REPORT.md:71–72`).
+- Independently recomputed rolling84 nesting violations are 2014 **516 / 1,230** out of **42,432** scored hours and 2012 **592 / 669** out of **52,416**. The two violation sets can overlap. The daily simultaneous-coverage statements match `RUN/scores_macro.csv:2,8` (2012 **0.45283882783882784**, 2014 **0.3821979245679621** for nominal marginal 90%).
+- `evidence_precheck_csv_token_limit.json` contains two `value_not_found` results. I did not accept the later smaller-file precheck as semantic evidence by itself: I parsed the actual `metrics_macro.csv` with `csv.DictReader` and independently established an exact string match for every field of the selected `evidence_values.json` row. Its underlying numerical values were also independently recomputed. Thus those two precheck failures are resolved against the primary CSV, rather than ignored or promoted to a semantic PASS. The precheck covers only four selected tokens and cannot certify the entire report.
+- The code-manifest and raw inputs do not prove historical preregistration, comprehensive hyperparameter reproduction, or external authenticity of the local dataset download. The audit verifies local provenance and consistency within the stated scope.
+
+## D. Dead-code / execution-path checks — PASS
+
+- P0's entry point calls `main` under the thread limit (`route_a/p0_baseline.py:326–328`). It rebuilds data at `:203–204`, predicts at `:234`, runs the independent calibrator at `:270`, scores at `:288`, writes pinballs at `:289–292`, and emits the corresponding tables at `:307–314`. Saved arrays and independently matched tables confirm that these metric paths produced results.
+- `metric_arrays` is used by the scoring generator (`route_a/p0_baseline.py:133`) and diagnosis (`route_a/p0_diagnose.py:142`). `score_rows` emits WIS and nesting counts actually written into `scores_per_farm.csv` (`route_a/p0_baseline.py:146–155,288,310`). No reported metric was found only in an uncalled function.
+- The authoritative bootstrap is called by the diagnosis entry point at `route_a/p0_diagnose.py:168`; the report explicitly reads its output (`route_a/p0_report.py:14,74–77`). The initial baseline bootstrap is executed and its `paired_blocks.csv` exists, but its issued-date index compresses missing 2012 dates (`route_a/p0_baseline.py:165–167`). That result is explicitly superseded, not a dormant corrected implementation being falsely reported. It must remain excluded from released conclusions as stated at `RUN/REPORT.md:87`.
+- Imported historical files contain other GBM/risk/independent-tail routines that P0 does not invoke. Their presence is not evidence that those experiments ran in P0. P0 imports only the data/feature/reference-calibration paths it uses (`route_a/p0_baseline.py:25–27`), and no new-method effectiveness claim depends on dormant legacy functions.
+
+## E. Scope, chronology, availability and uncertainty — WARN
+
+**Chronology/preprocessing checks pass.** Chronological phases are fixed in `gefcom_protocol_v2.py:42–52`. Valid training rows precede the first nontraining origin (`route_a/p0_baseline.py:217–220`). The imputer is fitted only on proper-training rows and its statistics/indicator columns are compared with the copied fitted imputer (`:221–228`). Forecast features use observed past power, calendar features and NWP; the future-target array is returned separately and only checked for alignment (`gefcom_protocol_v2.py:54–72`; `run_gefcom_tail_dynamic.py:56–62`; `strong_baselines.py:53–77`; `run_p2_2012.py:20–46`). Shifted NWP boundary NaNs are feature-edge effects, not imputed target labels.
+
+**All saved CQR states are temporally legal.** Independent reconstruction checked **782,784 correction cells** across both stages, all 17 farms, three confidence levels and static/rolling arms. Every correction, endpoint, `n_cal`, and maximum label timestamp matches exactly. The signed score and rank `ceil((n+1)(1−alpha))` are correct (`route_a/p0_baseline.py:55–92`); every requested rank is finite, with minimum `n−rank = 1`. The rolling set contains only completed valid label days with `target_end <= origin` and `target_end > origin−84d`; static retains its initial seed. The review confirms the legacy 90% reference uses equivalent logic (`online_calibration.py:139–150,164–173,193–213`). Negative correction and raw-midpoint collapse are explicitly accounted for, not silently converted to expansion-only conformal intervals.
+
+**Operational availability is assumed.** All 17 minimum train-end/first-forecast gaps are **0 hours**. The most recent power observation occurs exactly at issue time, and the previous day's final calibration label may also arrive at that instant. This is causal under the declared zero reporting delay, but does not establish that actual measurement/NWP services would deliver those values in time. GEFCom2012's chosen native batches never have issue time later than origin (`gefcom_protocol_v2.py:122–130`), but an issue timestamp is not evidence of zero release latency. GEFCom2014 provides no native issue clock (`gefcom_protocol_v2.py:141–142`; `RUN/REPORT.md:18–20`).
+
+**Scope is 17 replays, two fixed training witnesses, one seed.** The code fixes QRF hyperparameters, selects farm 1 in each dataset for refitting, and uses the same held historical chronology (`route_a/p0_baseline.py:231–253`; `route_a/p0_protocol.json:5–14,19–20`). This does not establish 17 independent training reproductions, random-seed robustness, new-method superiority, a calibrated full distribution, fresh-holdout generalization, or cross-site transfer. The report generally makes these limitations clear (`RUN/REPORT.md:3,15,20,51,93`). The stronger training/width interpretations identified above are the remaining semantic reason for WARN.
+
+**Calendar uncertainty computation passes; inference remains descriptive.** The authoritative algorithm draws the same circular 14-calendar-day block indices for all farms/methods and retains zero-count no-service dates (`route_a/p0_diagnose.py:17–46`). Each farm's statistic is recomputed as sampled sum/sample count and farms are then averaged, so missingness does not silently turn the target into an hourly pooled statistic. The 2014 grid has 184 days; 2012 has 363 calendar days, including 51 days unserved at all farms. My independent implementation used the full saved evaluation calendar rather than the union of issued dates and matched all 54 output rows within **1.09e−16**.
+
+The independently recomputed 90% IS comparisons (method minus reference) are:
+
+| Dataset | Method/reference | Delta | 95% calendar-block interval |
+|---|---|---:|---|
+| 2014 | rolling84 − raw | −0.00016471199426970617 | [−0.0020520340001922432, 0.0016601986833063296] |
+| 2014 | rolling84 − static | −0.0003841032604857686 | [−0.002108869909698685, 0.0011026481550561818] |
+| 2012 | rolling84 − raw | −0.016372040873807947 | [−0.024155337407594093, −0.009314829201769131] |
+| 2012 | rolling84 − static | −0.009165385810857352 | [−0.013662357814027595, −0.004973373696231648] |
+
+These intervals condition on the fitted forests and observed service pattern; they do not include seed/retraining, farm-population, missing-day performance, or model-selection uncertainty. Calendar circularity assumes wrapping end/start is an acceptable approximation; 14 days is one chosen block length. Seasonality and historical reuse prevent interpreting these as assumption-free confirmatory intervals. The report's absence of a 2014 IS-improvement claim and its acknowledgment that 2012 intervals became wider are correct (`RUN/REPORT.md:76–87`). No multiplicity-adjusted subgroup testing was performed or claimed.
+
+## F. Evaluation-type classification — PASS
+
+| Component | Classification | Evidence / limitation |
+|---|---|---|
+| Coverage, IS, WIS, pinball, MAE, RMSE, descriptive conditional metrics | `real_gt` | Raw observed `y` supplies scoring targets; `route_a/p0_baseline.py:124–155,289–292`; `route_a/p0_diagnose.py:98–162`. |
+| Exact replay against old `heads.npz` / calibration files | Numerical reproduction/regression check, model-reference comparator | `route_a/p0_baseline.py:236–240,277–286`. This is not independent ground truth or predictive accuracy. If forced into a model-reference category it is explicitly labeled as reproduction, never passed off as empirical GT. |
+| Two seed-0 refits versus frozen forests | Deterministic training/prediction reproduction | `route_a/p0_baseline.py:242–253`; not two independent statistical effectiveness trials. |
+| Ramp/near-zero subgroups | Retrospective `real_gt` subgroup diagnostics | Groups use future observed target change/value (`route_a/p0_baseline.py:101–109`), explicitly restricted to diagnosis (`RUN/REPORT.md:66`). Not a deployable gate or causal treatment. |
+| Hand-calculated IS and future-label invariance | Synthetic unit-test fixtures only | `route_a/check_p0.py:1–3,11–34`; never included in empirical tables. |
+
+There is no human evaluation, simulation-based performance claim, or unlabeled model-generated pseudo-ground-truth result in the audited P0 outputs.
+
+## Agent-follows-doc verification
+
+I read `docs/COMPUTE_ENV.md` and executed its first three PowerShell commands **verbatim from the project root**, sequentially, through the project interpreter/guard. The fourth baseline command was not run. No environment rebuild was attempted.
+
+1. `docs/COMPUTE_ENV.md:17`: `& .venv/Scripts/python.exe tools/run_route_a.py --script tools/verify_isolation.py` — exit **0**. Output: `inside_write=true`, `outside_write_blocked=true`, `source_read_allowed=true`, `source_and_dataset_writes_rejected=true`, guard loaded from `D:\Study\wind_probability_route_a\tools\runtime_guard\sitecustomize.py`.
+2. `docs/COMPUTE_ENV.md:18`: `& .venv/Scripts/python.exe tools/run_route_a.py --script qrf_witness.py` — exit **0**. Exact output: `QRF_WITNESS 1.4.2 [0.0, 1.0]`.
+3. `docs/COMPUTE_ENV.md:19`: `& .venv/Scripts/python.exe tools/run_route_a.py --script route_a/check_p0.py` — exit **0**. Output declares `fixture_type=synthetic_unit_tests_only`, `hand_computed_IS=true`; all six alpha × rolling/static cases have `future_label_invariance=true` for alpha 0.20/0.10/0.05.
+
+**Doc-versus-reality divergence: none observed for these three commands.** They establish the documented witnesses, not a fresh 17-farm training reproduction or a verified OS-level sandbox. `RUN/environment.json` records Python 3.13.0, NumPy 2.1.3, pandas 2.2.3, scikit-learn 1.5.2, quantile-forest 1.4.2, and guard enabled. The checked environment is the existing project venv; clean-machine installation was outside scope.
+
+## Claim C1: Baseline reproduction
+
+- **claim_supported: yes; confidence: high**, within the precise local retrospective scope. Acceptance remains provisional because this is a same-family review.
+- **What results support:** all 17 frozen forests replay their saved q05/q95 exactly; independent arrival-time 90% rolling CQR reproduces historical clipped endpoints; raw samples/features and train-only imputer are checked against caches; two fixed farm-1 seed-0 refits produce identical seven-quantile forecasts and compared tree structures. The new 80/90/95% interval/pinball/WIS scoring is numerically consistent with real observed labels. Documentation witnesses run successfully.
+- **What results do not support:** 17 from-scratch retrainings, multiple independent seeds, superiority to strong same-information baselines, current operational availability, an official competition score, complete-distribution calibration, or generalization to uninspected dates/sites.
+- **Missing evidence:** none required for the narrow local replay/two-witness claim. Wider reproducibility would need all-farm refits, multiple environments/versions and a clean dependency setup; robustness/effectiveness would separately need multiple seeds and fresh dates/sites. Those are optional expansions, not reasons to rerun this P0 now.
+- **Suggested claim:** “在指定本地环境及既有历史划分上，17 个冻结 QRF 的 q05/q95 与 90% rolling84 CQR 完全复现；两套数据各 1 个预先指定风场的 seed=0 从头重训也完全复现。真实标签评分与独立复算一致。”
+- **Next experiment:** retain the frozen P0 as a versioned control; no additional full training is necessary merely to establish this narrow claim.
+
+## Claim C2: Diagnostic attribution
+
+- **claim_supported: partial; confidence: medium** for attribution. Confidence is high for the descriptive calculations, lower for any explanation that ranks data, optimization, representation or information limits. This distinction must remain visible.
+- **What results support:** structured NWP service gaps; a clear difference between marginal and realized-label-conditional coverage; upward-ramp upper-tail misses in 2012; near-zero lower-tail coverage loss associated mechanically with negative signed corrections in 2014; loss of cross-confidence nesting; modest retrospective 2012 IS improvement accompanied by width increase; no demonstrated 2014 IS improvement. These are reproducible observations of the tested models/protocol.
+- **What results do not support:** causal decomposition of training-data, optimization, model-capacity and NWP-information errors; proof that training is adequate; proof that the raw forest imposes a calibration-independent width floor; treating all near-zero observations as faults/curtailment or identifying a physical atom from rounded values; deployable subgroup selection from future true ramps; novel full-distribution or temporal-network effectiveness.
+- **Missing evidence:** controlled interventions with the same dates/inputs, learning curves or a bounded validation-only optimization control, same-information model comparisons, explicit measurement/NWP latency sensitivity, and a service-expanded evaluation. None can be inferred from a univariate wind-support fraction of 2%–3%, reproducible seed-0 trees, or comparison with persistence.
+- **Suggested claim:** “P0 定位了可用性、条件覆盖、尾部误差及区间一致性的具体问题，但尚未识别这些误差由训练、表示或 NWP 信息分别造成的比例；后续方法仅作为待检验假设。”
+- **Next experiments, in order:** (1) compare a coherent full-distribution calibrator with the frozen static/rolling controls using identical arrived-label rules and scored origins; require nesting/CDF validity, boundary semantics, coverage, width and proper scores together; (2) include a fixed-budget asymmetric-tail control, with any conditioning based only on information known at issuance; (3) study a historical-power or strictly causal NWP fallback on the complete calendar and report service rate plus matched-subset/full-calendar performance; (4) if causal attribution remains important, use validation-only learning-curve/model/input interventions and reserve an uninspected date/site split for confirmation. Do not select a method based on the evaluation-period true ramp/near-zero labels.
+
+## Review artifacts and scope of assurance
+
+- Main independent numerical check: `route_a/reviewer_verify_p0.py`; result: `RUN/review_trace/independent_numerical_verification.json` (includes source hash, all audited top-level artifact hashes, exact errors and bootstrap numbers).
+- Independent provenance/calibration check: `RUN/review_trace/independent_provenance_check.py`; result: `RUN/review_trace/independent_provenance_results.json`.
+- Executor's additional `route_a/p0_verify.py` and `RUN/release_checks.json` were read and agree with these checks. They were not substituted for independent judgment. The executor's WIS-versus-pinball identity check is a useful extra consistency assertion.
+- This review is not a proof of absence of every bug, an external authenticity certification of the downloaded benchmark, a clean-machine training replication, or cross-family review. Deterministic checks passed; semantic judgments remain **same-family / provisional**. There is no submission-readiness or new-method-effectiveness acceptance in this verdict.
+
+
+---
+
+# Targeted wording follow-up
+
+Date: 2026-11-07. Reviewer: GPT-6-Astra, ultra. `review_independence: same-family`; `acceptance_status: provisional`.
+
+**Findings 1 and 2 are resolved. Overall verdict remains WARN; integrity_status remains warn. Baseline reproduction remains yes; diagnostic attribution remains partial.** The remaining WARN expresses the study's retained scope/availability/attribution limitations, not an outstanding numerical defect or these corrected wording issues.
+
+- **Finding 1 / W1 — resolved.** `experiments/route_a/20261107_p0_v020/REPORT.md:7` now explicitly separates successful implementation/replay from adequate training optimization and states that training, model and NWP contributions cannot be separated. The source template agrees at `route_a/p0_report.py:22`. The execution-scope qualifier at `REPORT.md:125` / `route_a/p0_report.py:106` consistently says numerical reproduction does not establish sufficient training.
+- **Finding 2 / W2 — resolved.** `REPORT.md:92` limits the absence of narrowing to the tested static/rolling CQR arms, requires a paired comparison for other calibrators, and explicitly denies that the observed width ratio is a performance lower bound. The source template agrees at `route_a/p0_report.py:83`.
+- **Finding 3 / W3 — remains resolved by disclosure.** `REPORT.md:125` and `protocol_deviations.json:5–8` accurately distinguish reconstructing/saving the full calendar from checking historical complete-calendar cache equality. The original protocol is preserved; the authoritative calendar-bootstrap record remains identified at `protocol_deviations.json:11–14`.
+
+I directly reread only the targeted report/template passages, the existing execution-scope qualifier and `protocol_deviations.json`. No broad numerical check, model training or environment rebuild was rerun. The prior independent numerical findings remain in `001-review.response.md` and `001-review.verdict.json`; this follow-up does not replace those historical records or enlarge their assurance. Single-seed retrospective scope, only two refits, assumed reporting/release availability and absence of causal attribution or new-method effectiveness evidence remain unchanged limitations.
+
+SHA-256 values distinguish the historical review snapshot from the final wording snapshot checked here:
+
+| Artifact | Historical 001-review hash | Final wording hash |
+|---|---|---|
+| `experiments/route_a/20261107_p0_v020/REPORT.md` | `6c0cf5d1270731478656d7769f3d9eddc092de0ad5301e4b8df8f6883452bd5b` | `035ebb7abcd738fd764d28b72ea6570eaa40fb2f9cca72479d51cb4e9d99e2b2` |
+| `route_a/p0_report.py` | `b84adbca850502553466d535770108d337827ce3f7dd53473a13bbc0af341566` | `d5fee0f4d20d49d75441706d55f918d3bcdbfcf50ca6b6344fadd17c60d48615` |
+| `experiments/route_a/20261107_p0_v020/protocol_deviations.json` | `e5dc362a59bd38ffcfdb19417bfac973f9f59ca103d0dae41ce68f9c78f42b05` | `e5dc362a59bd38ffcfdb19417bfac973f9f59ca103d0dae41ce68f9c78f42b05` |
+
+No further wording correction is required for findings 1–3. This is still a same-family provisional review, with no publication or submission acceptance implied.

@@ -1,0 +1,24 @@
+{
+  "status": "clarified_before_performance_analysis",
+  "reason": "2012 has missing calendar days; union-of-issued-date blocks do not represent 14 calendar days",
+  "authoritative": "paired_calendar_blocks.csv",
+  "superseded_for_reporting": "paired_blocks.csv",
+  "raw_predictions_or_endpoints_changed": false,
+  "seed": 20261107,
+  "draws": 1000,
+  "calendar_checks": [
+    {
+      "year": 2014,
+      "calendar_days": 184,
+      "issued_union_days": 184,
+      "missing_all_farms_days": 0
+    },
+    {
+      "year": 2012,
+      "calendar_days": 363,
+      "issued_union_days": 312,
+      "missing_all_farms_days": 51
+    }
+  ],
+  "scope": "conditional on fitted seed0 forests; no multiplicity correction; descriptive intervals"
+}

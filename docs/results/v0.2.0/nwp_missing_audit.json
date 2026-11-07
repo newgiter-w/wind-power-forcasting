@@ -1,0 +1,240 @@
+[
+  {
+    "year": 2012,
+    "farm": 1,
+    "phase": "validation",
+    "excluded_nwp_days": 13,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 13
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "phase": "evaluation",
+    "excluded_nwp_days": 51,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 51
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "phase": "validation",
+    "excluded_nwp_days": 13,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 13
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "phase": "evaluation",
+    "excluded_nwp_days": 51,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 51
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "phase": "validation",
+    "excluded_nwp_days": 13,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 13
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "phase": "evaluation",
+    "excluded_nwp_days": 51,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 51
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "phase": "validation",
+    "excluded_nwp_days": 13,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 13
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "phase": "evaluation",
+    "excluded_nwp_days": 51,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 51
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "phase": "validation",
+    "excluded_nwp_days": 13,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 13
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "phase": "evaluation",
+    "excluded_nwp_days": 51,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 51
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "phase": "validation",
+    "excluded_nwp_days": 13,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 13
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "phase": "evaluation",
+    "excluded_nwp_days": 51,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 51
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "phase": "validation",
+    "excluded_nwp_days": 13,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 13
+    },
+    "all_exclusions_verified_against_native_csv": true
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "phase": "evaluation",
+    "excluded_nwp_days": 51,
+    "candidate_ages_hours": [
+      0,
+      12,
+      24
+    ],
+    "missing_target_hours_best_candidate_min": 12,
+    "missing_target_hours_best_candidate_max": 12,
+    "weekdays": {
+      "Thursday": 51
+    },
+    "all_exclusions_verified_against_native_csv": true
+  }
+]

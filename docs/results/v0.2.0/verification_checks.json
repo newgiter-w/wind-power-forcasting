@@ -1,0 +1,21 @@
+{
+  "isolation": {
+    "exit_code": 0,
+    "stdout": "{\"inside_write\": true, \"outside_write_blocked\": true, \"source_read_allowed\": true, \"source_and_dataset_writes_rejected\": true, \"guard_loaded_from\": \"D:\\\\Study\\\\wind_probability_route_a\\\\tools\\\\runtime_guard\\\\sitecustomize.py\"}",
+    "stderr": ""
+  },
+  "kernel": {
+    "exit_code": 0,
+    "stdout": "QRF_WITNESS 1.4.2 [0.0, 1.0]",
+    "stderr": ""
+  },
+  "causal_and_metric_unit_tests": {
+    "exit_code": 0,
+    "stdout": "{\"fixture_type\": \"synthetic_unit_tests_only\", \"hand_computed_IS\": true, \"checks\": [{\"alpha\": 0.2, \"rolling\": false, \"future_label_invariance\": true}, {\"alpha\": 0.2, \"rolling\": true, \"future_label_invariance\": true}, {\"alpha\": 0.1, \"rolling\": false, \"future_label_invariance\": true}, {\"alpha\": 0.1, \"rolling\": true, \"future_label_invariance\": true}, {\"alpha\": 0.05, \"rolling\": false, \"future_label_invariance\": true}, {\"alpha\": 0.05, \"rolling\": true, \"future_label_invariance\": true}]}",
+    "stderr": ""
+  },
+  "dependencies": {
+    "exit_code": 0,
+    "stdout": "No broken requirements found."
+  }
+}

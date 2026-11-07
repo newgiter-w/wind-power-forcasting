@@ -1,0 +1,11 @@
+{
+  "python": "3.13.0",
+  "executable": "D:\\Study\\wind_probability_route_a\\.venv\\Scripts\\python.exe",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "sklearn": "1.5.2",
+  "quantile_forest": "1.4.2",
+  "qrf_module": "D:\\Study\\wind_probability_route_a\\.venv\\Lib\\site-packages\\quantile_forest\\__init__.py",
+  "guard": "1",
+  "cpu": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel"
+}

@@ -1,0 +1,17 @@
+{
+  "original_protocol_preserved": true,
+  "changes": [
+    {
+      "item": "cached complete-calendar equality",
+      "planned": "compare cached calendar",
+      "executed": "reconstruct and save full calendar; compare issued origins, phase, target validity, labels/history/features; no rowwise equality check against a historical full-calendar cache",
+      "metric_effect": "none; claim narrowed"
+    },
+    {
+      "item": "time block calendar",
+      "authoritative_protocol": "calendar_bootstrap_protocol.json",
+      "authoritative_results": "paired_calendar_blocks.csv",
+      "metric_effect": "point estimates unchanged; inference uses full calendar including no-service days"
+    }
+  ]
+}

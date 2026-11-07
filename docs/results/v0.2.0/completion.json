@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "farms": 17,
+  "frozen_replays": 17,
+  "from_scratch_refits": 2,
+  "new_method_training": 0,
+  "elapsed_seconds": 313.5125710000284,
+  "scope": "retrospective, seed0",
+  "version": "0.2.0"
+}

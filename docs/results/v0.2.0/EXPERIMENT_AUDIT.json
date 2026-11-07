@@ -1,0 +1,272 @@
+{
+  "date": "2026-11-07",
+  "verdict": "WARN",
+  "overall_verdict": "WARN",
+  "integrity_status": "warn",
+  "reviewer_model": "gpt-6-astra",
+  "reviewer_reasoning": "ultra",
+  "reviewer_family": "openai",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "agent_id": "/root/p0_integrity_review",
+  "checks": {
+    "A_gt_provenance": {
+      "status": "pass",
+      "details": "Raw dataset labels are retained without imputation. Input eligibility is independent of future target validity. All 344664 target cells and 344664 history cells independently match raw CSVs.",
+      "evidence": [
+        "gefcom2014_experiment.py:38-49",
+        "gefcom_protocol_v2.py:77-97",
+        "gefcom_protocol_v2.py:110-112",
+        "gefcom_protocol_v2.py:131",
+        "route_a/p0_baseline.py:124-126"
+      ]
+    },
+    "B_score_normalization": {
+      "status": "pass",
+      "details": "Standard observed-label interval scores, pinball, WIS and MAE; no prediction-statistic denominator. Physical support clipping is disclosed. Nonnested separately calibrated intervals cannot be represented as a calibrated full CDF.",
+      "evidence": [
+        "route_a/p0_baseline.py:95-98",
+        "route_a/p0_baseline.py:130-155",
+        "route_a/p0_baseline.py:289-292",
+        "experiments/route_a/20261107_p0_v020/REPORT.md:51",
+        "experiments/route_a/20261107_p0_v020/REPORT.md:93"
+      ]
+    },
+    "C_result_existence": {
+      "status": "pass",
+      "details": "All 148 input hashes and 10 code hashes match; complete artifacts and refit witnesses exist. Reported numerical values match primary arrays/tables. Earlier two token-precheck failures were resolved by exact primary-CSV parsing and independent numerical recomputation.",
+      "evidence": [
+        "route_a/p0_baseline.py:242-254",
+        "route_a/p0_baseline.py:307-322",
+        "route_a/p0_diagnose.py:163-170",
+        "experiments/route_a/20261107_p0_v020/metrics_macro.csv:90",
+        "experiments/route_a/20261107_p0_v020/metrics_macro.csv:93",
+        "experiments/route_a/20261107_p0_v020/metrics_macro.csv:842",
+        "experiments/route_a/20261107_p0_v020/metrics_macro.csv:844"
+      ]
+    },
+    "D_dead_code": {
+      "status": "pass",
+      "details": "Reported metric functions are invoked and their outputs independently match result files. Historical imported routines do not imply additional P0 experiments. The initial issued-date bootstrap is explicitly superseded by the executed calendar bootstrap.",
+      "evidence": [
+        "route_a/p0_baseline.py:270",
+        "route_a/p0_baseline.py:288-292",
+        "route_a/p0_baseline.py:307-314",
+        "route_a/p0_diagnose.py:168",
+        "route_a/p0_report.py:14",
+        "route_a/p0_report.py:74-80"
+      ]
+    },
+    "E_scope": {
+      "status": "warn",
+      "details": "17 frozen-model replays and two fixed seed-0 refits on previously inspected dates. All saved calibration states are temporally legal under zero latency, but deployment availability and causal attribution are not established. Width ratios do not establish a lower bound on other calibrators' achievable width. Full calendar-bootstrap results reproduce exactly; their intervals remain descriptive and model-conditional.",
+      "evidence": [
+        "route_a/p0_protocol.json:13-20",
+        "route_a/p0_baseline.py:55-92",
+        "route_a/p0_baseline.py:217-253",
+        "route_a/p0_diagnose.py:17-46",
+        "experiments/route_a/20261107_p0_v020/REPORT.md:7",
+        "experiments/route_a/20261107_p0_v020/REPORT.md:18-20",
+        "experiments/route_a/20261107_p0_v020/REPORT.md:76",
+        "experiments/route_a/20261107_p0_v020/REPORT.md:92",
+        "experiments/route_a/20261107_p0_v020/REPORT.md:125"
+      ]
+    },
+    "F_evaluation_type": {
+      "status": "pass",
+      "primary_type": "real_gt",
+      "other_components": {
+        "legacy_prediction_comparison": "explicit_numerical_reproduction_check_not_performance_GT",
+        "two_refits": "deterministic_training_reproduction",
+        "unit_tests": "synthetic_fixture_only"
+      },
+      "details": "Performance metrics use actual observed labels. Legacy model outputs are comparison targets solely for explicitly labeled reproduction. Synthetic fixtures are excluded from empirical results; target-defined subgroups are retrospective diagnostics.",
+      "evidence": [
+        "route_a/p0_baseline.py:124-155",
+        "route_a/p0_baseline.py:236-253",
+        "route_a/p0_baseline.py:277-292",
+        "route_a/check_p0.py:1-3",
+        "route_a/check_p0.py:11-34",
+        "experiments/route_a/20261107_p0_v020/REPORT.md:66"
+      ]
+    }
+  },
+  "claims": [
+    {
+      "id": "C1_baseline_reproduction",
+      "claim_supported": "yes",
+      "confidence": "high",
+      "integrity_status": "warn",
+      "what_results_support": "Local 17-forest q05/q95 replay and 90% rolling84 CQR endpoint reproduction, two fixed farm-1 seven-quantile seed-0 training witnesses, real-label scoring, and successful documented environment witnesses.",
+      "what_results_dont_support": "17 from-scratch refits, multiple seeds, official competition equivalence, new-method effectiveness, fresh-holdout or deployed performance, or full-distribution calibration.",
+      "missing_evidence": "None required for the narrow local replay/two-witness claim. Broader training/environment/generalization assertions would require additional refits, clean environments, seeds and uninspected dates/sites.",
+      "suggested_claim_revision": "在指定本地环境及既有历史划分上，17 个冻结 QRF 的 q05/q95 与 90% rolling84 CQR 完全复现；两套数据各 1 个预先指定风场的 seed=0 从头重训也完全复现。真实标签评分与独立复算一致。",
+      "next_experiments_needed": [
+        "No further full training is necessary merely to establish the narrow P0 reproduction claim; retain the frozen baseline as a versioned control."
+      ],
+      "acceptance_status": "provisional"
+    },
+    {
+      "id": "C2_diagnostic_attribution",
+      "claim_supported": "partial",
+      "confidence": "medium",
+      "descriptive_calculation_confidence": "high",
+      "integrity_status": "warn",
+      "what_results_support": "Structured service gaps, conditional tail failures despite adequate macro coverage, near-zero losses associated with negative signed corrections, nonnesting, descriptive 2012 IS improvement with wider intervals, and no demonstrated 2014 IS improvement.",
+      "what_results_dont_support": "Causal decomposition among training data, optimization, model capacity and NWP information; sufficient training; a calibration-independent width floor; fault labels inferred from near-zero power; deployable subgroup selection using future labels; novel method effectiveness.",
+      "missing_evidence": "Controlled same-date/input interventions, validation-only optimization or learning-curve controls, same-information model comparisons, latency sensitivity, service-expanded assessment, and an uninspected confirmation split.",
+      "suggested_claim_revision": "P0 定位了可用性、条件覆盖、尾部误差及区间一致性的具体问题，但尚未识别这些误差由训练、表示或 NWP 信息分别造成的比例；后续方法仅作为待检验假设。",
+      "next_experiments_needed": [
+        "Compare coherent full-distribution calibration with frozen static/rolling controls under identical label-arrival rules; evaluate CDF/nesting validity, boundary semantics, coverage, width and proper scores jointly.",
+        "Include a fixed-budget asymmetric-tail control using only issue-time conditioning information.",
+        "Evaluate a historical-power or strictly causal NWP fallback over the complete calendar, reporting service rate and both matched-subset and expanded-service performance.",
+        "For causal attribution, conduct validation-only learning-curve/model/input interventions and preserve an uninspected date/site split."
+      ],
+      "acceptance_status": "provisional"
+    }
+  ],
+  "doc_verification": {
+    "document": "docs/COMPUTE_ENV.md",
+    "cwd": "D:/Study/wind_probability_route_a",
+    "commands_verbatim": [
+      {
+        "line": 17,
+        "command": "& .venv/Scripts/python.exe tools/run_route_a.py --script tools/verify_isolation.py",
+        "exit_code": 0,
+        "inside_write": true,
+        "outside_write_blocked": true,
+        "source_read_allowed": true,
+        "source_and_dataset_writes_rejected": true
+      },
+      {
+        "line": 18,
+        "command": "& .venv/Scripts/python.exe tools/run_route_a.py --script qrf_witness.py",
+        "exit_code": 0,
+        "stdout": "QRF_WITNESS 1.4.2 [0.0, 1.0]"
+      },
+      {
+        "line": 19,
+        "command": "& .venv/Scripts/python.exe tools/run_route_a.py --script route_a/check_p0.py",
+        "exit_code": 0,
+        "fixture_type": "synthetic_unit_tests_only",
+        "hand_computed_IS": true,
+        "future_label_invariance_cases_passed": 6
+      }
+    ],
+    "fourth_full_baseline_command_executed": false,
+    "environment_rebuilt": false,
+    "divergence": "none observed for the three documented commands"
+  },
+  "independent_evidence": {
+    "numerical_script": "route_a/reviewer_verify_p0.py",
+    "numerical_results": "experiments/route_a/20261107_p0_v020/review_trace/independent_numerical_verification.json",
+    "provenance_script": "experiments/route_a/20261107_p0_v020/review_trace/independent_provenance_check.py",
+    "provenance_results": "experiments/route_a/20261107_p0_v020/review_trace/independent_provenance_results.json",
+    "target_cells": 344664,
+    "history_cells": 344664,
+    "calibration_correction_cells": 782784,
+    "max_calibration_error": 0.0,
+    "input_hashes_checked": 148,
+    "code_hashes_checked": 10,
+    "regime_metric_rows": 1224,
+    "conditional_metric_rows": 1224,
+    "interval_decomposition_rows": 1224,
+    "pinball_rows": 238,
+    "score_rows": 102,
+    "calendar_bootstrap_rows": 54,
+    "maximum_interval_metric_error": 4.440892098500626e-16,
+    "maximum_calendar_bootstrap_error": 1.0842021724855044e-16,
+    "native_missing_hour_audit_reexecuted_independently": false,
+    "native_missing_hour_audit_code_and_source_hashes_checked": true
+  },
+  "routing_action": "Retain qualified P0 baseline and descriptive findings. Supplement diagnostic attribution with controlled experiments when authorized; do not infer causal or new-method effectiveness acceptance.",
+  "pending_external_review": true,
+  "audit_skills": [
+    "experiment-audit",
+    "result-to-claim"
+  ],
+  "summary": "Requested wording findings 1 and 2 are resolved; calendar execution-scope discrepancy remains accurately disclosed. No outstanding correction is required for findings 1-3. WARN reflects retained study limitations, not a numerical defect or unresolved wording.",
+  "findings": [
+    {
+      "id": "W1",
+      "status": "resolved",
+      "evidence": [
+        "experiments/route_a/20261107_p0_v020/REPORT.md:7",
+        "experiments/route_a/20261107_p0_v020/REPORT.md:125",
+        "route_a/p0_report.py:22",
+        "route_a/p0_report.py:106"
+      ],
+      "details": "Successful replay is explicitly separated from sufficient optimization and causal attribution."
+    },
+    {
+      "id": "W2",
+      "status": "resolved",
+      "evidence": [
+        "experiments/route_a/20261107_p0_v020/REPORT.md:92",
+        "route_a/p0_report.py:83"
+      ],
+      "details": "Width observation is limited to tested static/rolling CQR and explicitly disclaimed as a lower bound on other calibrators."
+    },
+    {
+      "id": "W3",
+      "status": "resolved_by_explicit_deviation_record",
+      "evidence": [
+        "experiments/route_a/20261107_p0_v020/REPORT.md:125",
+        "experiments/route_a/20261107_p0_v020/protocol_deviations.json:5-8"
+      ],
+      "details": "Full-calendar reconstruction is accurately distinguished from cached-calendar equality while retaining the original protocol."
+    },
+    {
+      "id": "W4",
+      "status": "retain_scope_qualifiers",
+      "details": "Retrospective single-seed study; 17 replays but only two refits; assumed power/NWP availability; descriptive model-conditional inference; no causal decomposition or new-method-effectiveness acceptance."
+    }
+  ],
+  "initial_review": "review_trace/001-review.verdict.json",
+  "final_review": "review_trace/005-wording-followup.verdict.json",
+  "historical_audited_input_hashes": {
+    "experiments/route_a/20261107_p0_v020/availability_weekday.csv": "be34bfbdf0e9495d75c2a286ceb152492dc77b865ccd0844f73f7711c90ecd67",
+    "experiments/route_a/20261107_p0_v020/calendar_bootstrap_protocol.json": "95061eeef2be0a275729bb641591aa910c295087909d58521b3422fbe4cc4894",
+    "experiments/route_a/20261107_p0_v020/calibration_diagnostics.csv": "c43b72cd8eebea5e67036351b9438339d49ce9201342fc8993b873550769899a",
+    "experiments/route_a/20261107_p0_v020/code_manifest.json": "93b9f22ac0c6312d9cd40296667144ddf737256257e7eff7f7cdebc9751e2925",
+    "experiments/route_a/20261107_p0_v020/completion.json": "8cb0923377545bc8fe354f974f14039cc1e54f8a402e18ce3813c2f66b850d7e",
+    "experiments/route_a/20261107_p0_v020/conditional_inputs.csv": "6dd08d765f50ea12208c09d3c14bd6515c26bd80db13d0de434e9088a62c1de6",
+    "experiments/route_a/20261107_p0_v020/data_quality.csv": "7607f5341cff4e43a7d5951d60faf734894e76770734367f274af92bb4a1eb35",
+    "experiments/route_a/20261107_p0_v020/data_support.csv": "f3b26324595e78d07dacf8b0577cef58ede5295ca595ff9d2cfd29f67af6b614",
+    "experiments/route_a/20261107_p0_v020/diagnosis_completion.json": "84f87bd8f26923c490148bf02d3936f23dfce537c638151bec727b4a449d62e9",
+    "experiments/route_a/20261107_p0_v020/distribution_shift.csv": "d8b70297f1c08a41ea657d01cd9341eadfa74be23c84724b4717be9b9b32cc84",
+    "experiments/route_a/20261107_p0_v020/environment.json": "325da8dddb7961bfc2913a404982c7e1f8a7042759bcab0af233dc4890f7d6db",
+    "experiments/route_a/20261107_p0_v020/evidence_precheck.json": "77ecef977762addffa7eb9d2f24fd63e1ab4c8162a74fff1d95f8d6c11090eb8",
+    "experiments/route_a/20261107_p0_v020/evidence_precheck_csv_token_limit.json": "37ef4d804cea12d06a2a6556d3e7a0ef57486e6f9e3b5db175c87ba345d99929",
+    "experiments/route_a/20261107_p0_v020/evidence_values.json": "4c840258e2ade1756c6c16198c7d5a9d07332ac241af715f3195b7a3ec32bbc1",
+    "experiments/route_a/20261107_p0_v020/input_manifest.json": "df853b84a5a8eb78dae51726f17ab0186888531296b4ee3c232ba77279cc41ec",
+    "experiments/route_a/20261107_p0_v020/interval_decomposition.csv": "d7537e444ded84b6711dea112375f2a9ba3db051247c6e13a0fb8e389d2e8799",
+    "experiments/route_a/20261107_p0_v020/metrics_macro.csv": "f611a3ceaf9242446c57f560e8f76260d45d4deda62c4927006a2fad72e11876",
+    "experiments/route_a/20261107_p0_v020/metrics_per_farm.csv": "b378174659e92397d12d563c65a77e6559c4dc097f484dc5882d0ce4429e1b84",
+    "experiments/route_a/20261107_p0_v020/near_zero_transitions.csv": "97d2682f3016d915828889063374dd896be23d60569ac58070c0a91b1ae76ace",
+    "experiments/route_a/20261107_p0_v020/nwp_missing_audit.json": "c3f40a4767a2b01232d0c55d8b85fbb71c19e8827b5b489f71bbba4ae319f3f0",
+    "experiments/route_a/20261107_p0_v020/paired_blocks.csv": "f152878157f13850f856716f935d4490b67a74d9a86bb5aa047d2bb9ea1b2041",
+    "experiments/route_a/20261107_p0_v020/paired_calendar_blocks.csv": "9e651bce5ad39337a14b678b99087262540a863c342361d61e4970ad94fabd3f",
+    "experiments/route_a/20261107_p0_v020/pinball_per_farm.csv": "d8503e3e9090cb66cecb7363fbe02232a70e9a7cdfc596fc5a28aaa02704bd08",
+    "experiments/route_a/20261107_p0_v020/point_metrics.csv": "1ab4ccdde6d8dcaea40ba7c6f908e87a9a39080eb566aa18a64f8b2d3d4868d6",
+    "experiments/route_a/20261107_p0_v020/protocol.json": "cac88ddf6b01df37add4b08a686b74321c5700c7f4eb32a5ae41185c83aa8d44",
+    "experiments/route_a/20261107_p0_v020/release_checks.json": "2ac463d7fc231b1c920cee57700e8e51ad6cb4526923612d22090f5a523d34ef",
+    "experiments/route_a/20261107_p0_v020/REPORT.md": "6c0cf5d1270731478656d7769f3d9eddc092de0ad5301e4b8df8f6883452bd5b",
+    "experiments/route_a/20261107_p0_v020/reproduction.json": "7a75c148622ebac2e1dd1e9942820b413f34d1d19855397a6c865ab6510fa9bd",
+    "experiments/route_a/20261107_p0_v020/scores_macro.csv": "d6fc4ef3991b1f30fc4a568dd64688d379cafd7d8344aacea86eda54b12c4f91",
+    "experiments/route_a/20261107_p0_v020/scores_per_farm.csv": "9d6873cda7a2e139b6d4ec3388450b93fb8ed6ff8d7dbc44a3868015395c632a",
+    "experiments/route_a/20261107_p0_v020/verification_checks.json": "4c43d1e5b71508c92fd433b75ed3a50c7b32c14e5895a423fd8ad175f5a83b01",
+    "experiments/route_a/20261107_p0_v020/protocol_deviations.json": "e5dc362a59bd38ffcfdb19417bfac973f9f59ca103d0dae41ce68f9c78f42b05",
+    "experiments/route_a/20261107_p0_v020/review_trace/001-review.response.md": "fd019bb58429b46f4271f6d1fc1154a86eea5b91bb78076809102f64e8974069",
+    "route_a/p0_report.py": "b84adbca850502553466d535770108d337827ce3f7dd53473a13bbc0af341566",
+    "route_a/reviewer_verify_p0.py": "c1413871f24cab4fda38dc44db51464cfcb3f9577ddb5d062e0ab03aac6293ac",
+    "docs/COMPUTE_ENV.md": "b851dca077f9747e01531a2a7c38c6b66a24698f24329ba8195d82905a20dbf5"
+  },
+  "final_wording_snapshot_hashes": {
+    "experiments/route_a/20261107_p0_v020/REPORT.md": "035ebb7abcd738fd764d28b72ea6570eaa40fb2f9cca72479d51cb4e9d99e2b2",
+    "route_a/p0_report.py": "d5fee0f4d20d49d75441706d55f918d3bcdbfcf50ca6b6344fadd17c60d48615",
+    "experiments/route_a/20261107_p0_v020/protocol_deviations.json": "e5dc362a59bd38ffcfdb19417bfac973f9f59ca103d0dae41ce68f9c78f42b05"
+  },
+  "trace_path": "review_trace/",
+  "generated_at": "2026-11-07T16:06:14.559454+08:00"
+}

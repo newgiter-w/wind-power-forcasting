@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "type": "deterministic artifact checks, not semantic assurance",
+  "source_and_input_hashes_verified": true,
+  "input_files_checked": 148,
+  "frozen_replays": 17,
+  "from_scratch_refits": 2,
+  "endpoint_files_checked": 34,
+  "all_overall_metric_recomputation_max_error": 1.1102230246251565e-16,
+  "raw_WIS_equals_twice_mean_pinball_max_error": 1.1102230246251565e-16,
+  "all_calibration_label_times_legal": true,
+  "diagnosis_source_hash": "0a0d0004770f950627bcdafe6d2ee2dc0f3ab3ff45f7078a1f8ea8ed71a46b84",
+  "verifier_source_hash": "ac5758991d89c8a022a993ebed25ec08832fdde4cb138bf7c1d8a2ef366c3783"
+}

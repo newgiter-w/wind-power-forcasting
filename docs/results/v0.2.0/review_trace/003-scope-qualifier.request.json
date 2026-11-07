@@ -1,0 +1,5 @@
+{
+  "tool": "collaboration.send_message",
+  "target": "/root/p0_integrity_review",
+  "prompt": "The provenance subreview's optional calendar wording issue is addressed without rewriting the initial protocol or changing any predictions/metrics: REPORT.md now has an appended execution-scope qualifier and run/protocol_deviations.json records the planned-versus-executed calendar check and the existing calendar-bootstrap clarification. Re-read the appended REPORT paragraph, protocol_deviations.json, and route_a/p0_report.py if relevant before finalizing citations. All previous REPORT line numbers are unchanged."
+}

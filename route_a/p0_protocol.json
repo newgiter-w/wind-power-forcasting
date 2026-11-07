@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "phase": "P0 baseline reproduction and retrospective diagnosis",
+  "datasets": {"2014": 10, "2012": 7},
+  "seed": 0,
+  "forest": {"n_estimators": 500, "min_samples_leaf": 10, "max_features": 1.0, "max_samples_leaf": null},
+  "quantiles": [0.025, 0.05, 0.1, 0.5, 0.9, 0.95, 0.975],
+  "confidence_levels": [0.8, 0.9, 0.95],
+  "methods": ["QRF_raw", "QRF_CQR_static", "QRF_CQR_rolling84"],
+  "calibration": "signed max(lower-y,y-upper) score; ceil((n+1)*(1-alpha)) order statistic per lead; signed shrinkage permitted; crossed intervals collapse to raw midpoint; physical support [0,1]",
+  "availability": "complete valid label day with target_end <= issue time; rolling excludes target_end <= issue time minus 84 calendar days; no current/future label used",
+  "stages": {"validation": "seed = validation_seed; score = validation", "evaluation": "seed = validation; score = evaluation"},
+  "from_scratch_refit": [{"year": 2014, "farm": 1}, {"year": 2012, "farm": 1}],
+  "refit_scope": "two fixed training/prediction reproducibility witnesses, not multi-seed effectiveness evidence; replay all 17 frozen forests",
+  "raw_data_checks": "reconstruct from shared read-only CSVs; compare labels/history/origins/validity/calendar/features and train-only imputer with copied caches",
+  "groups": "overall, lead 1..24, month YYYY-MM, season, power [0,.01]/(.01,.2]/(.2,.8]/(.8,1], hourly up/down ramps > .1 capacity including h1 vs last observed power; groups use observed targets only for retrospective diagnosis",
+  "metrics": "coverage,width,interval_score,lower/upper misses; raw seven-quantile pinball; three-level WIS with fixed raw median; median MAE vs persistence; daily simultaneous coverage descriptive only",
+  "uncertainty": "synchronous paired circular moving 14-day blocks, 1000 bootstrap draws, seed 20261107, farm-macro per dataset; conditional on fitted models",
+  "historical_status": "ALL dates are previously inspected retrospective/development evidence, not fresh holdouts",
+  "selection": "no new hyperparameter or calibration window search; preserve all arms and failures",
+  "release": "source + aggregate metrics + manifests + audit; raw data, predictions and weights remain local"
+}

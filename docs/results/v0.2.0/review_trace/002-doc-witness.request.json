@@ -1,0 +1,15 @@
+{
+  "skill": [
+    "experiment-audit",
+    "result-to-claim"
+  ],
+  "run_id": "2026-11-07_route-a-p0",
+  "agent_id": "/root/p0_integrity_review",
+  "reviewer_model": "gpt-6-astra",
+  "reviewer_reasoning": "ultra",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "timestamp": "2026-11-07T15:57:58.307945+08:00",
+  "tool": "collaboration.send_message",
+  "prompt": "Also perform the run-experiment skill's agent-follows-doc verification: read D:/Study/wind_probability_route_a/docs/COMPUTE_ENV.md and execute the first three documented PowerShell witness commands verbatim from the project root (isolation, qrf_witness, route_a/check_p0). Do not rerun the fourth/full baseline command. Record doc-vs-reality divergence and exact results in your review. No environment rebuild is requested."
+}

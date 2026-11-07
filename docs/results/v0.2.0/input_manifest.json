@@ -1,0 +1,890 @@
+[
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\Task15_W_Zone1_10\\Task15_W_Zone1_10\\Task15_W_Zone1.csv",
+    "sha256": "1f4f4751d7e3e71351bbbbcc2fe5fdc2afed9eda9d44e0d1d3f76f799348ca80",
+    "bytes": 1738246
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\Task15_W_Zone1_10\\Task15_W_Zone1_10\\Task15_W_Zone10.csv",
+    "sha256": "c391bf9ecedda2aaa90619ab395d95f38670071ca44cb1d0a987f4f6fb4da627",
+    "bytes": 1756335
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\Task15_W_Zone1_10\\Task15_W_Zone1_10\\Task15_W_Zone2.csv",
+    "sha256": "8788bad07ba35e6a6a7abbe3c83f0caa6a7079bb2c43f3428dfe08c4a6000c57",
+    "bytes": 1751092
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\Task15_W_Zone1_10\\Task15_W_Zone1_10\\Task15_W_Zone3.csv",
+    "sha256": "dbcdf8f23695775be08d2460f7074711c359ecec826c76e6600363a815f65b2f",
+    "bytes": 1743050
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\Task15_W_Zone1_10\\Task15_W_Zone1_10\\Task15_W_Zone4.csv",
+    "sha256": "f0c18d6cc5d8f6c14a51f3df46fd72b3f3fcdb12f40b48aa83bd9b5fdee5ac00",
+    "bytes": 1751085
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\Task15_W_Zone1_10\\Task15_W_Zone1_10\\Task15_W_Zone5.csv",
+    "sha256": "5ea074f0f0a1aacd9fd8fde794df37d83031363871dd0a2e3ac128f3354a9a32",
+    "bytes": 1738911
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\Task15_W_Zone1_10\\Task15_W_Zone1_10\\Task15_W_Zone6.csv",
+    "sha256": "f9ebc433e6382975b12a109b07d6d997158fc25f9add1916377f787b65a5bdc8",
+    "bytes": 1740010
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\Task15_W_Zone1_10\\Task15_W_Zone1_10\\Task15_W_Zone7.csv",
+    "sha256": "b3612d736325691ffb277dd34ff7dbef60ef5bccf256222bff4789254ca25a09",
+    "bytes": 1738806
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\Task15_W_Zone1_10\\Task15_W_Zone1_10\\Task15_W_Zone8.csv",
+    "sha256": "fd062df81bb7b3e2f5058b4352c38e80802cbaa8f2d7f8cb537cd3512c3a53fd",
+    "bytes": 1730601
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\Task15_W_Zone1_10\\Task15_W_Zone1_10\\Task15_W_Zone9.csv",
+    "sha256": "84a37ac9097666715471aca3f49276d55f286467b1e40382e6f5cdb6f8f216b3",
+    "bytes": 1722794
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1.csv",
+    "sha256": "4a6ff28e393f52309c99a9406103c76e8d9e8260cce7c3a513708beaa07065d5",
+    "bytes": 64462
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone10.csv",
+    "sha256": "d5866399c9a869501928fc2be2748c4b1d80fa35f9bec07425e1a7a3e5b91711",
+    "bytes": 65018
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone2.csv",
+    "sha256": "8e6f16227f3f506ab5f82b6c448f862621971d8318b42f0c63044a1bb08713a8",
+    "bytes": 64379
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone3.csv",
+    "sha256": "0c08c2b9f7d19c00fcf9f9381413af561d27df72c717af5ed0045af1494bbc3e",
+    "bytes": 64444
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone4.csv",
+    "sha256": "e45a37a8ae58670b3a0ea38529d2cee5b178e50da933e08250f72a6d0e0ce02b",
+    "bytes": 64407
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone5.csv",
+    "sha256": "f3d6c91489a222e5aa1468258b4d368bcfedc5f58f5d176e95aa517c4ab0860e",
+    "bytes": 64407
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone6.csv",
+    "sha256": "dc5c766c24a325d68c262cbaad502ab5aa4cb9035ef4a1cdfd183db8326d4e98",
+    "bytes": 64429
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone7.csv",
+    "sha256": "86dea06a0ff2d73dde2208b8a5071119ff14810c145a727bb9b66fe191053afd",
+    "bytes": 64240
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone8.csv",
+    "sha256": "ae53df8c9d98dde4b3c2f43cf334db978056ff7f3d34652f546dedd1438907a8",
+    "bytes": 64240
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Task 15\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone1_10\\TaskExpVars15_W_Zone9.csv",
+    "sha256": "3400777e6da70e2ac8791edd265ad5fa183ddf86d3c672db51fef4dab4f7b678",
+    "bytes": 64497
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2014_wind\\data\\Wind\\Solution to Task 15\\solution15_W.csv",
+    "sha256": "231dd2a69431594682206638c7fc8fba48886d2737bebf8758bae805107808ad",
+    "bytes": 250472
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_01\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "6ccb247bb5d08c14739cd2c8e86d154e525e58a57f420bd386a86af4059df126",
+    "bytes": 25774306
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_01\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "fb391bd45d7427591717940840adc83e4775e332f015862a933eb671ecaea32a",
+    "bytes": 64866
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_01\\leaf_10\\seed_0\\fit.json",
+    "sha256": "a7d029c76230d3b2d58a60f86cf7706d5abf7c2024291fd6b835f8de6200c793",
+    "bytes": 318
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_01\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "0983c4e35d22e82c96457eea8b5c774801507b50772e5122904d165b7458756c",
+    "bytes": 66442
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_01\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "a3c3f330560f125cee04507bebbfe1960db2f0780d9b9b21977cc8a257af7776",
+    "bytes": 133045
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_01\\samples.npz",
+    "sha256": "01fcda4c8ce352cbcea29c399ed53a3b1f1bfbe75fc7a3f8327944c99031bd21",
+    "bytes": 228272
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_01\\features.npz",
+    "sha256": "54ade500f7714638bef033abe9ce4a7168b14374669e176c9f1d42b2ab510098",
+    "bytes": 3622219
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_02\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "4b3314e9e1db534ebd979d417401ad0e8cb88d7cd415870261503e9f00dffc10",
+    "bytes": 23437947
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_02\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "1cf9db279b0b58b68300e14edf7ee0da442f7f4ff5ff2ebdf102a02d20913d55",
+    "bytes": 72978
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_02\\leaf_10\\seed_0\\fit.json",
+    "sha256": "0e894110cdba5b3c84764ac5665ae71d3fafccaded6273cdb89dc8eb0e580d21",
+    "bytes": 319
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_02\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "c160758f4a86b168f873bae78eddd50edf6ca7a9331b128950584ccd96eeafa9",
+    "bytes": 83485
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_02\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "ae501957b87ba4a8c2302f1cce777a13fc43dda56f6cd5742063842ba28403b3",
+    "bytes": 163798
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_02\\samples.npz",
+    "sha256": "23aac0a49681f19da2225a1498418288ae6dbda9a27a41307a3093971acd61a6",
+    "bytes": 259486
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_02\\features.npz",
+    "sha256": "a1725af9ee6e045ae1867ce1bb15092898380ca6177073cd4022f66de3175a9d",
+    "bytes": 3634388
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_03\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "53bdfdb8dc3b6605502988da47cedb1501ae2a9f3d1d9c9e3b48702ca5e6a36c",
+    "bytes": 25652768
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_03\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "6b403396cebaac7ea63bf210f09e68a51f78dfebfa81b0f60d23bc2715a18f48",
+    "bytes": 68663
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_03\\leaf_10\\seed_0\\fit.json",
+    "sha256": "e515f0a86e4d63e5211e456d231cd86382fa7ac52e70221b1442353d6082b994",
+    "bytes": 319
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_03\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "f9ab300691c7eb78ba6183ad199a6dee359b4e93575c90782a6db80339a69609",
+    "bytes": 77358
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_03\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "e141fab9781defb97d7e31ba9384bdc153794a42c1a620160764c37354d2a3b4",
+    "bytes": 142702
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_03\\samples.npz",
+    "sha256": "d5a3822d07bfdd34acb291fe9f0b05fb0a85f3faf2f175a97a7f9a0c382ec71a",
+    "bytes": 252185
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_03\\features.npz",
+    "sha256": "1109e2fbe22e6acfab2dbc975c7b2905bfb5fbdf64ff87b05078e670d064c3d4",
+    "bytes": 3573213
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_04\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "cab325354e9241648e53261288778c04bd1a99713f09b8eb1fd0ee4bc8b4be9c",
+    "bytes": 23940165
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_04\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "eed4bc87e31233a5539b9e3fda7de090b656bc2863590c35e56ea612219345ad",
+    "bytes": 56308
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_04\\leaf_10\\seed_0\\fit.json",
+    "sha256": "339183e05f6e33548049b70e69dfef85a7696f3e4a404fb393ffcfba11c31a59",
+    "bytes": 319
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_04\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "2d6c4c5156e5e278834b64cc92d69b31752003cfd14dba50441b323e3828a4d3",
+    "bytes": 64212
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_04\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "6575c6eb1d7a161b81dffa5ca055fbdd9370e09524bcfcc2a10c8656eeb677dd",
+    "bytes": 116862
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_04\\samples.npz",
+    "sha256": "ac347393d7fcc16d293bfd264f0b8ededd5e7ee7f41ae4dddd1c326ea4846dba",
+    "bytes": 129082
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_04\\features.npz",
+    "sha256": "c724bc80225fbaffeee517ba32b6a0c480cac0583f1256a33b0c5d34b7eafa0e",
+    "bytes": 3674159
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_05\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "7dbe3f53093bbe915541804b5436c44a11be0c5f64b3ca65255ebc20dc5fde57",
+    "bytes": 26084670
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_05\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "40a3850bbd67732d988201493bb49e010dd2f5ecb105157b045799ba0c22c7e0",
+    "bytes": 65204
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_05\\leaf_10\\seed_0\\fit.json",
+    "sha256": "5d379abfee70d58d65758a16704c0677c45f178a5216af96d3f7fa328ef87a1b",
+    "bytes": 320
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_05\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "0de182f74a617b20bd037dfa9cb77e2356ead2500a9164d05334038d6d089fd4",
+    "bytes": 70457
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_05\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "188e635d084b6466b24620d427d1a84682b2954506b7e2346ca3a9b9cd8146fc",
+    "bytes": 145308
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_05\\samples.npz",
+    "sha256": "b54bd1ba1d812b72f83503cc4ae98c3db604793f718c5c8bbe2ad34a53d92626",
+    "bytes": 232124
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_05\\features.npz",
+    "sha256": "f8b01195db1362099d685a382d434556b3ee83c35fb344faa9a4916c5ad761f3",
+    "bytes": 3678963
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_06\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "bfdc1f5fd21f04065ff371373ecc31450e481cad4cb17ea956b60f65daaab48b",
+    "bytes": 25769205
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_06\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "d46ce691a731648c071260fa6754ef62eca91248f27f134bad900c9e20aa8c37",
+    "bytes": 69538
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_06\\leaf_10\\seed_0\\fit.json",
+    "sha256": "a8131db45f5a71bce5972a7b3a6e2236e3bc7a9b4a91f6eeb40a22ddfd55e829",
+    "bytes": 319
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_06\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "12d4054d5a6c51b01bab9289e36884735747d2af47ba37fddb10a228f3123e90",
+    "bytes": 73185
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_06\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "b6a5b6ac90f41a7f384ac336f4a395e83dc5ad3542d7a92f576fe40d17850eae",
+    "bytes": 132356
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_06\\samples.npz",
+    "sha256": "f569cd32a06cfe6645fec4521a33df250cfc2e6fa168c3853fdb6bcd517d46e0",
+    "bytes": 237316
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_06\\features.npz",
+    "sha256": "fcbda7bc18f223916e490b78d82d3bbb88019354c9a05dd0d41f365dee9ed9a3",
+    "bytes": 3678009
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_07\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "8354f259456c6811c98d1644058156618c0ecc2f22f6b226adfb20e0f35414b6",
+    "bytes": 27134475
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_07\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "fe27f2f66fdd7b9d55f6a3aa4cb6762656852a4e8186429e9727c91336462cff",
+    "bytes": 68101
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_07\\leaf_10\\seed_0\\fit.json",
+    "sha256": "992b7df604d30fc0a96f0c1a9f53e669b3dba10fed29cda7746fc6da3814e6f4",
+    "bytes": 320
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_07\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "ee89bfb1637b12bda3afd91846feacab949a41681b9ab227a073e8d8c537aa9f",
+    "bytes": 78479
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_07\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "79a8605f82bb9f451d4790636ea6e6b11b80f5cea11744de638d01142e53210d",
+    "bytes": 162804
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_07\\samples.npz",
+    "sha256": "7f4f765e1cd71c18d7ffba02b254d9bc8100c9b8e22ace21d69e733d6ad87017",
+    "bytes": 254195
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_07\\features.npz",
+    "sha256": "0a79c9eae1d7118d066b9874ba55b14dd9cd216839bb209d408315552dd490f2",
+    "bytes": 3678730
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_08\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "d4bc484c17f6fe08c425c073c5af0f735e990e876621c19cc57a8d9da7b4dbf3",
+    "bytes": 27569296
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_08\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "44d29c30b40233f7310efa9f5f8ff92499366f6911f6e02cf8e04a0165f00fdc",
+    "bytes": 61847
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_08\\leaf_10\\seed_0\\fit.json",
+    "sha256": "ab806d3a7dd1a3c08f0731340a237e40344b278698b7bb542bf36a59f931ab23",
+    "bytes": 319
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_08\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "f34de61fdf3d2a026776bd76604657f738eb55d68a58c18615744c318c7a7ec8",
+    "bytes": 68622
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_08\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "68dcb3f869cdecf85c175acef5cbcd92c5bacf6f1739af3c189044be662e2589",
+    "bytes": 142370
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_08\\samples.npz",
+    "sha256": "07f8270686ca7abc366aff29d01c034af60771b881edfbdcd947721a6b0ea275",
+    "bytes": 220492
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_08\\features.npz",
+    "sha256": "07123b01ed1b79ffb2e900f96e6480868b377d01ba032e6601d22091e44493f8",
+    "bytes": 3673333
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_09\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "6f3e7f8e1c88c8de08c01b50e4ac2d66b82d6ee1a0e6bfce00256cf6baa50a48",
+    "bytes": 31025324
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_09\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "01e6006a850ff5a294bf3cd9bf245e5581c4d96ccaca760545d33dd1c00fbfd0",
+    "bytes": 52502
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_09\\leaf_10\\seed_0\\fit.json",
+    "sha256": "876089235ef4d849a9869c8043582bd3a6883b20c3ee5e687f10922eec06b430",
+    "bytes": 320
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_09\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "8f01d6479791c783f285b28358d8ce37860752be51bfa8cd8acf914a3c901123",
+    "bytes": 53899
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_09\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "3b8daf917d7c8f51475af15775d9079a47c99466c759c2d9c2d553c8381b1ee6",
+    "bytes": 107482
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_09\\samples.npz",
+    "sha256": "fa587a45885cf5d67855fdb94729ef0cb3a03106b34df3f16e55098b79a4e6a7",
+    "bytes": 145608
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_09\\features.npz",
+    "sha256": "33e81234e52d8180585b270208705c96b382dde72e2bf5739761eb9576845f64",
+    "bytes": 3663493
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_10\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "9f1d48b49dc731e7af4e594a5d73e41068f92b62062b16ac61f6d18cddf835ce",
+    "bytes": 25301514
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_10\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "ec4c793ee0a377c93b566a03e920db04639a720accde57de0fbb36f32ffc4a2c",
+    "bytes": 67662
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_10\\leaf_10\\seed_0\\fit.json",
+    "sha256": "480d10bf9acba8c1b758a6b4b930cfd99fa5c25e208efd1b9aba4eeb016aea76",
+    "bytes": 319
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_10\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "c18215ba0ff60fe20a9fa90e430276db887e2d8db16b465372cea536af5a4a8d",
+    "bytes": 72878
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2014\\farm_10\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "853157451b2dfb07c37a68db7a3e0b94d36c30cc19f74496edd7e229687ae608",
+    "bytes": 124339
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_10\\samples.npz",
+    "sha256": "53eac2981812bd0905472ded274b5b6dd8c60ce79860d0bd450174a17c881414",
+    "bytes": 254638
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2014\\farm_10\\features.npz",
+    "sha256": "ff97d926bc14921f0f6babd8bd22dab0e55ea818309f4058afb59594ca4126bc",
+    "bytes": 3680397
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2012_wind\\data\\windpowermeasurements.csv",
+    "sha256": "679a663d2a0593ddc53a2a5c58d3a0e82e9f61022a824d022eec0d06c7c42630",
+    "bytes": 1606316
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2012_wind\\data\\windforecasts_wf1.csv",
+    "sha256": "1ec1a5fd3f59031b21c464241c0c99625be88e7471a63eae04178bf3fec8e89b",
+    "bytes": 3637797
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2012_wind\\data\\windforecasts_wf2.csv",
+    "sha256": "02a565582c58cabdbbced97184433adb69a62c57ca0e2d0d8921a335883e9463",
+    "bytes": 3668560
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2012_wind\\data\\windforecasts_wf3.csv",
+    "sha256": "709e5f7d76ea1f09091a9560dfbc574aa08ede4e7ebc3e26761cd9c7a35de786",
+    "bytes": 3646617
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2012_wind\\data\\windforecasts_wf4.csv",
+    "sha256": "f7d5f9bef2a51106c809b2e00c3b05ca0f91a04a8e033aa9a4a393f23f46db42",
+    "bytes": 3646443
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2012_wind\\data\\windforecasts_wf5.csv",
+    "sha256": "958af6f7d4b7e10f87709e2fac06335c1b250588793687f477a32e16424d1a3f",
+    "bytes": 3634767
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2012_wind\\data\\windforecasts_wf6.csv",
+    "sha256": "a311d56f29e5f24a5edc0d67740c390d03ac06845e162c2a4ef17df0fad5c6a9",
+    "bytes": 3649953
+  },
+  {
+    "kind": "raw_data",
+    "path": "D:\\Study\\wind_datasets\\nwp_benchmarks\\gefcom2012_wind\\data\\windforecasts_wf7.csv",
+    "sha256": "8a27599a0444db1fa7dc6370c4f32e2d2338bba624ad28cd5b2df3f0b1b87b5c",
+    "bytes": 3656723
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_01\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "62d4afb3343cd603da1df25779708e9850f60b393bdfd341b24e09290d84d724",
+    "bytes": 41803260
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_01\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "b494ca5e732ebe07d836d599ec7c0fd1fc3bd2136049c0da9a5f275cf737802f",
+    "bytes": 35324
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_01\\leaf_10\\seed_0\\fit.json",
+    "sha256": "2d7ba3ba9c6978cb1b2c722b22f35016947715a7b449ad6e56a8b7ab87870506",
+    "bytes": 321
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_01\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "fb8b990f3700c43defcb559471d1e013520ce1966c28be2fc0633113b326abbf",
+    "bytes": 24788
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_01\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "a59fec51b68a3cbb949c7ebe21d9cf460debbe7f5ed2071a1f7ba2c860f46087",
+    "bytes": 81182
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_01\\samples.npz",
+    "sha256": "3382065adb5f41adf774b9327ed24ef73f08f331163373f05cf7efa7bb5c45e6",
+    "bytes": 79714
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_01\\features.npz",
+    "sha256": "dd0e360fca218158ed364ca4777179d996c922def56c6e57e0d318232eba102a",
+    "bytes": 4592701
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_02\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "7981f92e541a38aba52306638e3f5842e320dce2ede9e1a00f3da591242299db",
+    "bytes": 39435769
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_02\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "d20547558e51d71811e0adf876309b8b176b10be7381aa44c0baef1a206a390d",
+    "bytes": 36364
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_02\\leaf_10\\seed_0\\fit.json",
+    "sha256": "0f1e0116f49a9df94bb4d81f63d58dddc20b51ead14672919dc0b8f0a1d38ecd",
+    "bytes": 321
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_02\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "8eb47f22b020dce9020edcf5b1f550cd84ccfc5d1ca15b0ac63a857128d59e9b",
+    "bytes": 23853
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_02\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "cf29b386e55cb881e62fa964319565c0e2f5423db05435975a3abe36bb185a01",
+    "bytes": 74713
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_02\\samples.npz",
+    "sha256": "d3c5e22d4c64eba8098c97fe8318941c28619fb93f131b0e1c9f24488bf58e9c",
+    "bytes": 77430
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_02\\features.npz",
+    "sha256": "122e32f757f66e7582e0dacb3352d174810218882c4d0de9075769985d7d5706",
+    "bytes": 4613001
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_03\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "b5c56425b07eea175466952340a1b614398d61742a54a259c2464d01a32eaf24",
+    "bytes": 37410426
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_03\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "4bef52afeb21381b2032295d94cd441363775f369e3868cace0901126c86e13c",
+    "bytes": 30240
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_03\\leaf_10\\seed_0\\fit.json",
+    "sha256": "c5c90929308c06e9ac62a0da1506451fafee694fb1523d7568b97434ba4fe3bf",
+    "bytes": 322
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_03\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "0b9876b5e3cade3391be13965ad42a0f449a5f861a078e13e5ca899ece24fc65",
+    "bytes": 23958
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_03\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "b127071b7097eef72f2b72b4c813149da083c3bfcaf689ebfae7d47e34c2c9b7",
+    "bytes": 67449
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_03\\samples.npz",
+    "sha256": "570b2866e2bb77e5647a0dfd8dc4d9eae5cf1cfce1dfc1fe9bb64bbbc66f9d38",
+    "bytes": 69810
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_03\\features.npz",
+    "sha256": "957edeabc4c395ffa33eca484f8ffbebfd5c242e397a0ba5133d3291374245d2",
+    "bytes": 4589725
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_04\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "9fbb50a3258deadc1a023e7a0d3a6655d474b7a47b3144c0d07f71481b96f2a6",
+    "bytes": 45214390
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_04\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "9f39028c28077d25f7da6d44fdb96487bd56f4ed164d852a5b74597689301cbb",
+    "bytes": 35099
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_04\\leaf_10\\seed_0\\fit.json",
+    "sha256": "69a450c09d5c9711b25bb811daa365c187fe1954b38d5bdcdaa4883b323202f4",
+    "bytes": 321
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_04\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "72e43d669e1f577d6612fa6c5c67ef6805d1163346a0c895608f30bbc8ef4586",
+    "bytes": 27618
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_04\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "0bfa74fb25e2afbbe8ba480ffdaca935b5fbe43d3b5194b1d7e81737431c1456",
+    "bytes": 81645
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_04\\samples.npz",
+    "sha256": "c75ee40d7d39efb518a956ffa3db9f6d5e53e6e972234c62818314fed7b79142",
+    "bytes": 76160
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_04\\features.npz",
+    "sha256": "7b3d26e081c86f597e3cce9d959451b69f59922840901c3b5011a28e2b1086c5",
+    "bytes": 4616636
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_05\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "b6be4eed29bdf301e4a86a52c162040dcc8152b2a5a8f2fd9985724e616d94ab",
+    "bytes": 40384935
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_05\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "314f472037b262530de7dbcea959e6d1dd11060ae8fa1ff42facf77d4864f681",
+    "bytes": 35927
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_05\\leaf_10\\seed_0\\fit.json",
+    "sha256": "1e5ac2f0a4a00eeb65379dab9e25d79ceb168e8241b05b1e750d4503bcef7ab4",
+    "bytes": 321
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_05\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "cfc5fd9a10124f4891aa97a1a6ea8ac2de84cbd08807b4c2985e896ff24f3918",
+    "bytes": 27163
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_05\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "c882bee0302d27523ab82210be69e46789bca778fa7af8899779627e30b55b72",
+    "bytes": 83391
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_05\\samples.npz",
+    "sha256": "14920695a6f42cae54f0efe9653e249a2d6540d1c546bb8b36925a0954ffb067",
+    "bytes": 77825
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_05\\features.npz",
+    "sha256": "69ae423c854b10adb216b3ca6baa2d987b5d02ce0b19edbf7315702813a24145",
+    "bytes": 4607610
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_06\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "bb7603bbb609b170353b74b7230048c52c74817865693725193202238df6619e",
+    "bytes": 38155034
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_06\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "bd24d822f7ae09a08f5c69d4a1d8085c9168f9bd5a0d2e76163d4ccc7c297504",
+    "bytes": 28081
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_06\\leaf_10\\seed_0\\fit.json",
+    "sha256": "6c28fddcca4094d135bd78ab7340df5bafdf7191bc5fa58a79aa1e642f0cd521",
+    "bytes": 322
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_06\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "72a2a04458ee89e7d170bdfc785d5cf1419d9fec053c985e4e1ad0afcf1178f4",
+    "bytes": 23271
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_06\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "18208489e41e9723a75bbd5b8700fbbf7409e8296e0024aefeb3e7bca062fa4b",
+    "bytes": 67627
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_06\\samples.npz",
+    "sha256": "28131d1b5b794f1fc65044e4bbe13a617316163c0d26e9522cd68c90401c293a",
+    "bytes": 63538
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_06\\features.npz",
+    "sha256": "755daf72458fd498c3df8cc15483ab610921ed6d8ff92c74643d6656e3e1ee02",
+    "bytes": 4589476
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_07\\leaf_10\\seed_0\\model.joblib",
+    "sha256": "cbe0a86e7f0994f51a3308bce495d122c38de4395f24a48dac1c301f17818838",
+    "bytes": 49545873
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_07\\leaf_10\\seed_0\\heads.npz",
+    "sha256": "8db06f4c45a36ef789785e137928fe3cb2da53d0a46ad9044b1fbc355ea1e04f",
+    "bytes": 22680
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_07\\leaf_10\\seed_0\\fit.json",
+    "sha256": "91a1e2ed4e901243f7b947271023f4c77c8e09aff49f28c7eaac8598b5a1dcda",
+    "bytes": 322
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_07\\leaf_10\\seed_0\\validation.npz",
+    "sha256": "40a0b586653eba5a2389e23b7d592486dc5e46e138c630d05f250012bac7048a",
+    "bytes": 16569
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_revision_20261104\\qrf\\gefcom2012\\farm_07\\leaf_10\\seed_0\\evaluation.npz",
+    "sha256": "f9c85a22a140110a9c65eb64e140329df53501cef4645833beaa942b83bfd23c",
+    "bytes": 50892
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_07\\samples.npz",
+    "sha256": "fcd24e9da4623fab0b2e33d584ced3f8f84205e2a5fbe1da671d1bcc03aa9afc",
+    "bytes": 51451
+  },
+  {
+    "kind": "copied_baseline",
+    "path": "out_gefcom_pooling_20261105\\inputs\\gefcom2012\\farm_07\\features.npz",
+    "sha256": "fc6ade01e554d9bde7fdc648ee7de3114fa0e4590d40febe5a7957e057c0abda",
+    "bytes": 4573878
+  }
+]
