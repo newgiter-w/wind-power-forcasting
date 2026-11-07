@@ -1,0 +1,19 @@
+{
+  "source": "D:\\Study\\wind_retrieval_interval",
+  "destination": "D:\\Study\\wind_probability_route_a",
+  "source_head": "3466d4e13a50a56a917bd16b03c10799e54aa63c",
+  "source_head_after": "3466d4e13a50a56a917bd16b03c10799e54aa63c",
+  "started_at": "2026-11-07T15:03:41+0800",
+  "completed_at": "2026-11-07T15:11:14+0800",
+  "file_count": 13065,
+  "copied_bytes_with_retries": 17427551067,
+  "elapsed_seconds": 453.7530642999336,
+  "route": "A",
+  "version": "0.1.0",
+  "snapshot_code_commit": "f4680bdc53a0133f3f04299ed4940e62eb37d86a",
+  "branch": "route-a/probabilistic-forecasting",
+  "rewritten_executable_source_files": [],
+  "physical_independent_git": true,
+  "large_artifacts": "local-only",
+  "atomicity": "per-file stable snapshot; source may have concurrent activity; no filesystem-wide atomic guarantee"
+}

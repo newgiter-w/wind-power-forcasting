@@ -1,0 +1,18 @@
+{
+  "version": "0.1.1",
+  "checks": {
+    "isolation": {
+      "exit_code": 0,
+      "output": "{\"inside_write\": true, \"outside_write_blocked\": true, \"source_read_allowed\": true, \"source_and_dataset_writes_rejected\": true, \"guard_loaded_from\": \"D:\\\\Study\\\\wind_probability_route_a\\\\tools\\\\runtime_guard\\\\sitecustomize.py\"}"
+    },
+    "qrf_kernel": {
+      "exit_code": 0,
+      "output": "QRF_WITNESS 1.4.2 [0.0, 1.0]"
+    },
+    "dependencies": {
+      "exit_code": 0,
+      "output": "No broken requirements found."
+    }
+  },
+  "new_model_experiments": 0
+}

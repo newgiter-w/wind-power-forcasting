@@ -1,0 +1,115 @@
+{
+  "version": "0.1.1",
+  "date": "2026-11-07",
+  "repository": "newgiter-w/wind-power-forcasting",
+  "local_commit": "74165ab7f7a62c6dc1896d2f8ca245cda133a028",
+  "local_branch": "route-a/probabilistic-forecasting",
+  "new_model_effectiveness_claims": false,
+  "legacy_python_files": 155,
+  "publication_files": [
+    {
+      "path": "README.md",
+      "bytes": 1875,
+      "sha256": "a600ea5943377e3eb5cb584f5b2333ac16408d999b02b42f749b0b95198c915c"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2379,
+      "sha256": "fede376005dceac1e1676fd3d0adb97164fb36747d1b0c0c8e7fb9695dbafe04"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1510,
+      "sha256": "8fd10183a77851f7d1e083c952a593e0ed4299ceca45382e6282950098ea9d5e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 495,
+      "sha256": "c31887c51584df02bde7ffcec72b4c9dfc2d3b5b624e83df537e9a9038c7ecde"
+    },
+    {
+      "path": "requirements-route-a.txt",
+      "bytes": 199,
+      "sha256": "9c4a98ad1f1b621d3895d8334b7f0347f127510d572df0296ca6ad948282094a"
+    },
+    {
+      "path": "docs/ROUTE_A_PLAN.md",
+      "bytes": 4952,
+      "sha256": "3a886b104f7d0c1727f1d1bf860f5dda560339b044e3693268dfd44e353b2a08"
+    },
+    {
+      "path": "docs/ISOLATION.md",
+      "bytes": 1565,
+      "sha256": "8433e7c2fdceef965a112ceda5afd5b79f26f61dc372fea70c6e35c8a473780c"
+    },
+    {
+      "path": "docs/snapshot_summary.json",
+      "bytes": 841,
+      "sha256": "9a3146ed9557a035a8b0aa7044b50dce5bd25cbbdbc2c63af866ecf1b9510ea6"
+    },
+    {
+      "path": "docs/verification.json",
+      "bytes": 599,
+      "sha256": "62ee53939456544d8467bb340c8352ee3a495b73b6b197dabab96972163e4f63"
+    },
+    {
+      "path": "docs/environment.lock.txt",
+      "bytes": 199,
+      "sha256": "14fb69c08f1e36c8d3648db71ec591596fb3942996c8c86b1dc0564473e2b345"
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "bytes": 856,
+      "sha256": "f1144b8b1c746c0ed703117ba763cd5da8a17176fb4dbeb0d52ece6c3e1cd3ba"
+    },
+    {
+      "path": "docs/literature/references.bib",
+      "bytes": 12906,
+      "sha256": "c833e2498110e4d226c0f753e4bdde98f64d893cacc6a20a7cf100e3aedeb246"
+    },
+    {
+      "path": "route_a/__init__.py",
+      "bytes": 76,
+      "sha256": "9fb5f12b0a7372648996928ea202aef7faa43a483871582b471529fcc2e3802f"
+    },
+    {
+      "path": "route_a/paths.py",
+      "bytes": 906,
+      "sha256": "cad3cb5511a637c6e94617a3d2125706d97191a019e848341642b790fd5c7803"
+    },
+    {
+      "path": "tools/run_route_a.py",
+      "bytes": 1495,
+      "sha256": "d6053d5e65ed5df9b2a7ba7af28fab9418c06ce6074e9da4cd28544407327fb2"
+    },
+    {
+      "path": "tools/verify_isolation.py",
+      "bytes": 1305,
+      "sha256": "6d16692c7a30febeda3c001ea882ad1e1fe0b2c0d88d4fa813159b2d02e07a02"
+    },
+    {
+      "path": "tools/runtime_guard/sitecustomize.py",
+      "bytes": 1034,
+      "sha256": "43ce594b20f087a529c1cf1ae5dc2e5d593b08175ebc532671c95e3a6386f362"
+    },
+    {
+      "path": "qrf_witness.py",
+      "bytes": 722,
+      "sha256": "2e50e2f2b9460b429e7519f44185962cc2aa97e2cb003dc18670278b57b92d18"
+    },
+    {
+      "path": "archives/route-a-v0.1.1-legacy-python.zip",
+      "bytes": 488264,
+      "sha256": "1bdbdb7293a26a1c8e09dc413146c133343ccbcb9dafd4451e7685daad9d3cb6"
+    }
+  ],
+  "excluded": [
+    "raw datasets",
+    "hourly prediction arrays",
+    "model weights",
+    "virtual environment",
+    "authentication/config secrets",
+    "third-party PDFs"
+  ],
+  "note": "GitHub import commit and local historical commit differ; verify file SHA256 rather than equating commit IDs."
+}
