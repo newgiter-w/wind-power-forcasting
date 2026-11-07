@@ -1,0 +1,5 @@
+{
+  "tool": "collaboration.send_message",
+  "target": "/root/p1_integrity_review",
+  "prompt": "The link is now ../../../docs/P1_METHODS.md in route_a/p1_report.py and regenerated run/REPORT.md, so it resolves from both the local run folder and published docs/results/v0.3.0. The table now labels CQR and the two raw groups as reference/control rather than candidate gate failures. No numbers, gates, selection, predictions, metrics or other report wording changed. Please re-read these two documentation edits and use the final REPORT/p1_report hashes when recording audit evidence. Finish the raw/structured review after remaining citations; no broader verification rerun is needed."
+}

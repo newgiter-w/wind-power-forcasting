@@ -1,0 +1,7 @@
+{
+  "source": "2014 validation only, fixed joint gate; all dates retrospective",
+  "eligible_passing": [],
+  "selected": "CQR_signed84",
+  "rule": "among passing candidates minimize validation WIS; otherwise retain CQR_signed84",
+  "evaluation_used_for_selection": false
+}

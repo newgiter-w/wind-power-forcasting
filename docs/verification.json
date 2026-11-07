@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "checks": {
     "isolation": {
       "exit_code": 0,
@@ -14,7 +14,6 @@
       "output": "No broken requirements found."
     }
   },
-  "new_model_experiments": 0,
   "p0": {
     "frozen_model_replays": 17,
     "from_scratch_baseline_refits": 2,
@@ -22,5 +21,15 @@
     "new_method_training": 0,
     "evidence": "docs/results/v0.2.0/release_checks.json",
     "scope": "historical retrospective baseline reproduction; no new-method effectiveness claim"
+  },
+  "p1": {
+    "frozen_forests": 17,
+    "new_forests_fit": 0,
+    "comparison_arms": 7,
+    "forest_hashes_match_P0": true,
+    "reference_macro_metrics_match_P0": true,
+    "evidence": "docs/results/v0.3.0/release_checks.json",
+    "selected": "CQR_signed84",
+    "scope": "retrospective, one fixed PIT seed, no candidate passes joint gate"
   }
 }

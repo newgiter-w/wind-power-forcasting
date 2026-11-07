@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-11-07",
+  "sources": [
+    {
+      "title": "Jonkers et al. 2024 SCDRF",
+      "doi": "10.1016/j.apenergy.2024.122900",
+      "url": "https://biblio.ugent.be/publication/01HQ8SA9C23K1EA9A2QJRD96N7",
+      "full_text_read_sections": "4.3.1-4.3.3 and Algorithms 2-3",
+      "local_pdf_sha256": "7ec77dedc85d9aa88043f77c8eed37c6c42f98a291de7d8dfff621fb8c62e21b",
+      "scope": "Algorithm3 needs a separately fitted residual-target forest, excluded by fixed-QRF constraint; not claimed replicated"
+    },
+    {
+      "title": "Kuleshov, Fenner, Ermon 2018 calibrated regression",
+      "url": "https://proceedings.mlr.press/v80/kuleshov18a.html",
+      "full_text_read_sections": "section3.2 Algorithm1",
+      "scope": "CDF probability-map recalibration inspiration; our empirical randomized-PIT pushforward is an adaptation, not isotonic-regression replication"
+    },
+    {
+      "title": "Romano, Patterson, Candes 2019 CQR",
+      "url": "https://papers.neurips.cc/paper_files/paper/2019/hash/5103c3584b063c431bd1268e9b5e76fb-Abstract.html",
+      "scope": "CQR context; dual-tail baseline matches existing independent-tail implementation rather than claiming exact paper reproduction"
+    }
+  ]
+}

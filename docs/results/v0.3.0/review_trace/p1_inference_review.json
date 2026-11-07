@@ -1,0 +1,28 @@
+{
+  "review_part": "P1 scoring, aggregation, inference, selection and report",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "deterministic_status": "pass",
+  "scope_status": "warn",
+  "substantive_numerical_defect": false,
+  "verified_metric_rows": 29085,
+  "verified_score_rows": 952,
+  "verified_paired_rows": 204,
+  "verified_gate_rows": 28,
+  "verified_report_table_rows": 72,
+  "selected": "CQR_signed84",
+  "passing_development_candidates": 0,
+  "passing_evaluation_candidates": 0,
+  "claims": [
+    {"id":"C1","claim_supported":"yes","scope":"P0 metric control matching; forest construction delegated to parent review"},
+    {"id":"C2","claim_supported":"no","scope":"No candidate meets all nine gate criteria in 2014 validation or either evaluation"},
+    {"id":"C3","claim_supported":"partial","scope":"Descriptive gains and tradeoffs supported; causal, broad generalization, theorem and deployment interpretations unsupported"}
+  ],
+  "action_items": [
+    {"severity":"minor","status":"resolved","path":"experiments/route_a/20261107_p1_v030/REPORT.md","line":143,"issue":"Broken method-document link","fix":"Final report and generator use ../../../docs/P1_METHODS.md; target verified"},
+    {"severity":"scope","issue":"Historical dates, fixed forests and one PIT seed cannot establish fresh confirmation or causal mechanism","fix":"Retain current qualifiers; require unused data, targeted ablations and sensitivity analyses before strengthening claims"}
+  ],
+  "verification_artifacts": ["review_trace/p1_inference_verify.py","review_trace/p1_inference_verify.json","review_trace/p1_report_verify.py","review_trace/p1_report_verify.json"],
+  "report_sha256_at_verification": "d2431abeefdcd902c8858b301566845a1510ac69a1b438001a2366f6cdc93689",
+  "prior_report_sha256": "c4fa4bd3e1ff30c17e21ef55c0d1bb8c6b2ad74ded7b4315fa05415e1738ea90"
+}

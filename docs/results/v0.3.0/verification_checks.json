@@ -1,0 +1,12 @@
+{
+  "isolation": {
+    "exit_code": 0,
+    "stdout": "{\"inside_write\": true, \"outside_write_blocked\": true, \"source_read_allowed\": true, \"source_and_dataset_writes_rejected\": true, \"guard_loaded_from\": \"D:\\\\Study\\\\wind_probability_route_a\\\\tools\\\\runtime_guard\\\\sitecustomize.py\"}",
+    "stderr": ""
+  },
+  "PIT_and_dualtail_units": {
+    "exit_code": 0,
+    "stdout": "{\"fixture_type\": \"synthetic_unit_tests_only\", \"exact_discrete_CRPS\": true, \"weighted_inverse_rank_ties\": true, \"frozen_leaf_bootstrap_weights\": true, \"current_and_future_label_invariance_all_seven_arms\": true, \"full_CDF_quantiles_nested\": true}",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": "0.3.0",
+  "phase": "P1 fixed-QRF full-distribution versus two-tail recalibration",
+  "reference_run": "experiments/route_a/20261107_p0_v020",
+  "datasets": {"2014": 10, "2012": 7},
+  "forest_policy": "load original seed0 leaf10 500-tree model; no fit, no tree/split/leaf-response changes; verify model SHA256 before and after",
+  "arms": ["QRF_linear_raw", "CQR_signed84", "DualTail84", "QRF_ECDF_raw", "PIT84", "PIT84_state", "DualTail84_state"],
+  "quantiles": [0.025, 0.05, 0.1, 0.5, 0.9, 0.95, 0.975],
+  "calibration_window_calendar_days": 84,
+  "availability": "identical P0 eligible/scorable dates; complete valid day with target_end <= origin; retain missing dates in bootstrap calendar; no current or future labels",
+  "PIT": "weighted right-continuous full leaf-response ECDF with inverse-leaf-size tree weights; randomized distributional transform F(y-)+U*(F(y)-F(y-)); U seeded 20261107+year*100+farm, fixed once for calibration samples; invert empirical calibration-PIT law through current full ECDF; PIT exactly 0/1 mapped to physical bounds 0/1; adaptation inspired by regression CDF recalibration, not exact SCDRF/CPS and no finite-sample time-series coverage claim",
+  "DualTail": "lower score q(alpha/2)-y; upper score y-q(1-alpha/2); each uses ceil((n+1)*(1-alpha/2)) order statistic; signed corrections allowed; crossed interval collapses to original raw midpoint; clip [0,1]",
+  "states": "mutually exclusive issue-time states: raw ECDF P(Y<=.01)>=.5; else raw q50 hourly rise >.1 (h1 vs last observed); else other. Never uses future true power or ramp label",
+  "state_shrinkage": "local calibration = same state and same six-hour lead band among arrived days; require >=20 distinct days and >=40 cells; otherwise global per-lead fallback. lambda=min(.8,local_days/(local_days+20)); mix local and per-lead global empirical laws. DualTail state uses same mixture and global finite rank/n threshold; heuristic conditional correction, no exact guarantee",
+  "evaluation": "P0 matching 80/90/95 intervals; true-label regime, lead, power, month/season groups; method-specific median for WIS; original frozen median also reported as a common-median WIS sensitivity; full-ECDF arms get exact empirical CRPS; do not invent CRPS for interval-only CQR/DualTail",
+  "primary_joint_gate_90": {"coverage_min": 0.9, "coverage_drop_max": 0.005, "width_ratio_max": 1.01, "IS_ratio_max": 1.0, "WIS_ratio_max": 1.0, "up_ramp_coverage_gain_min": 0.01, "near_zero_coverage_gain_min": 0.01, "each_target_group_IS_ratio_max": 1.0},
+  "gate_policy": "against CQR_signed84 separately per dataset/stage; report all components/arms, including failures; development gate on 2014 validation only; no new tuning on either evaluation period; retrospective evaluation cannot establish fresh confirmation",
+  "inference": "synchronous circular 14-calendar-day paired blocks, 1000 draws seed20261107, full P0 evaluation calendars; 90% IS,width,coverage by all/up_ramp/near_zero; descriptive and conditional on fixed forests, no multiplicity correction",
+  "historical_status": "all dates previously inspected; no fresh holdout, no novel algorithm or deployment-validity claim",
+  "scope_deviation": "Jonkers2024 Algorithm3 SCDRF requires fitting a residual-target forest; excluded to honor fixed existing QRF. This phase tests a full-ECDF PIT recalibration adaptation and DualTail controls instead."
+}

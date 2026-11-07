@@ -1,0 +1,68 @@
+{
+  "status": "pass",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "max_errors": {
+    "interval_metrics": 4.440892098500626e-16,
+    "WIS_pinball_identity": 4.440892098500626e-16,
+    "scores": 9.974659986866641e-17,
+    "boundary_score_aggregation": 9.974659986866641e-17,
+    "state_support": 3.552713678800501e-15,
+    "macro_metrics": 2.220446049250313e-16,
+    "macro_scores": 9.71445146547012e-17,
+    "paired_calendar_bootstrap": 3.972516759986888e-16,
+    "gate_numbers": 2.4424906541753444e-15,
+    "P0_controls": 2.220446049250313e-16
+  },
+  "compared_numeric_values": {
+    "interval_metrics": 203595,
+    "WIS_pinball_identity": 905688,
+    "scores": 8568,
+    "boundary_score_aggregation": 612,
+    "state_support": 510,
+    "macro_metrics": 24108,
+    "macro_scores": 1008,
+    "paired_calendar_bootstrap": 612,
+    "gate_numbers": 252,
+    "P0_controls": 4920
+  },
+  "metric_rows": 29085,
+  "score_rows": 952,
+  "paired_rows": 204,
+  "gate_rows": 28,
+  "selected": "CQR_signed84",
+  "passing_2014_validation": 0,
+  "passing_evaluation": 0,
+  "calendar_days": {
+    "2014": 184,
+    "2012": 363
+  },
+  "omitted_input_dates_by_farm": {
+    "2014": [
+      6,
+      7,
+      22,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "2012": [
+      51,
+      51,
+      51,
+      51,
+      51,
+      51,
+      51
+    ]
+  },
+  "all_macro_farms": [
+    7,
+    10
+  ],
+  "script_sha256": "9be37b1fef2dbbdba489a5afea851bcd6c891b2dc008ce0845cc16a6189d951b"
+}

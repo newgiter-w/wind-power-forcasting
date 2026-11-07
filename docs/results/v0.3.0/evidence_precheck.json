@@ -1,0 +1,63 @@
+{
+  "results": [
+    {
+      "id": "P1_farms",
+      "value": "17",
+      "source": "experiments\\route_a\\20261107_p1_v030\\completion.json",
+      "status": "verified",
+      "detail": "'17' found in experiments\\route_a\\20261107_p1_v030\\completion.json"
+    },
+    {
+      "id": "P1_fits",
+      "value": "0",
+      "source": "experiments\\route_a\\20261107_p1_v030\\completion.json",
+      "status": "verified",
+      "detail": "'0' found in experiments\\route_a\\20261107_p1_v030\\completion.json"
+    },
+    {
+      "id": "2014_width_ratio",
+      "value": "1.0277002453884632",
+      "source": "experiments\\route_a\\20261107_p1_v030\\evidence_values.json",
+      "status": "verified",
+      "detail": "'1.0277002453884632' found in experiments\\route_a\\20261107_p1_v030\\evidence_values.json"
+    },
+    {
+      "id": "2014_up_coverage_gain",
+      "value": "0.015333563359624769",
+      "source": "experiments\\route_a\\20261107_p1_v030\\evidence_values.json",
+      "status": "verified",
+      "detail": "'0.015333563359624769' found in experiments\\route_a\\20261107_p1_v030\\evidence_values.json"
+    },
+    {
+      "id": "2014_zero_coverage_gain",
+      "value": "0.036079196060541996",
+      "source": "experiments\\route_a\\20261107_p1_v030\\evidence_values.json",
+      "status": "verified",
+      "detail": "'0.036079196060541996' found in experiments\\route_a\\20261107_p1_v030\\evidence_values.json"
+    },
+    {
+      "id": "2012_width_ratio",
+      "value": "1.008907182099655",
+      "source": "experiments\\route_a\\20261107_p1_v030\\evidence_values.json",
+      "status": "verified",
+      "detail": "'1.008907182099655' found in experiments\\route_a\\20261107_p1_v030\\evidence_values.json"
+    },
+    {
+      "id": "2012_up_coverage_gain",
+      "value": "0.031112897906277137",
+      "source": "experiments\\route_a\\20261107_p1_v030\\evidence_values.json",
+      "status": "verified",
+      "detail": "'0.031112897906277137' found in experiments\\route_a\\20261107_p1_v030\\evidence_values.json"
+    },
+    {
+      "id": "2012_zero_coverage_gain",
+      "value": "-0.03041195428036736",
+      "source": "experiments\\route_a\\20261107_p1_v030\\evidence_values.json",
+      "status": "verified",
+      "detail": "'-0.03041195428036736' found in experiments\\route_a\\20261107_p1_v030\\evidence_values.json"
+    }
+  ],
+  "summary": {
+    "verified": 8
+  }
+}

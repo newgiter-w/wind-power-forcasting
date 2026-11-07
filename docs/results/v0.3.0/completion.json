@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "version": "0.3.0",
+  "farms": 17,
+  "methods": [
+    "QRF_linear_raw",
+    "CQR_signed84",
+    "DualTail84",
+    "QRF_ECDF_raw",
+    "PIT84",
+    "PIT84_state",
+    "DualTail84_state"
+  ],
+  "new_forests_fit": 0,
+  "forest_hashes_unchanged": true,
+  "elapsed_seconds": 254.7822020999156,
+  "scope": "retrospective, fixed seed0 forest and one fixed randomized-PIT realization"
+}
