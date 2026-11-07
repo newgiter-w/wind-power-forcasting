@@ -1,0 +1,68 @@
+{
+  "version": "0.4.0",
+  "phase": "P2 same-information noncrossing MLP/TCN/GRU versus frozen QRF",
+  "reference_run": "experiments/route_a/20261107_p0_v020",
+  "datasets": {
+    "2014": 10,
+    "2012": 7
+  },
+  "networks": [
+    "MLP",
+    "TCN",
+    "GRU"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "QRF": "frozen P0 seed0; no refit, no selecting a forest seed; neural seed variability does not measure QRF training variability",
+  "input_contract": "same canonical QRF columns, same 24h history and NWP curve, no extra meteorology/history/labels. Tokens are the existing per-lead rows (24,F); static history/full-curve columns are repeated exactly as in QRF. Temporal networks encode the lead sequence, not additional past power windows or future observed power. Hidden state resets for every origin",
+  "preprocessing": "internal epoch-selection imputer/scaler fitted on optimization prefix only; final imputer exactly equals original QRF train-only imputer, and final dense values equal saved QRF features. StandardScaler final fit on full proper-training cells only. No calibration/evaluation samples enter fitting",
+  "split": "proper-training valid days first80% optimization, last20% chronological early stopping; complete-label end before first stop issue. Choose epoch on stop pinball, then reinitialize at the same seed and refit ALL proper-training days for that many epochs, matching QRF's training-label budget. validation_seed/validation/evaluation never used to fit or early-stop networks",
+  "architectures": {
+    "MLP": "shared per-lead 96/32 GELU, dropout.1",
+    "TCN": "input projection32, four residual causal Conv1d k3 dilations1/2/4/8, LayerNorm/GELU/dropout.1, receptive field31 leads",
+    "GRU": "input projection32, one unidirectional hidden48 GRU, LayerNorm/dropout.1"
+  },
+  "head": "7 logits: unconstrained base plus cumulative .1*softplus positive increments; clip [0,1], allowing exact physical boundaries and ties. Bias initialized from corresponding training-only empirical quantiles. Raw noncrossing by construction; same independent-level CQR may break cross-level nesting, which is measured rather than silently repaired",
+  "quantiles": [
+    0.025,
+    0.05,
+    0.1,
+    0.5,
+    0.9,
+    0.95,
+    0.975
+  ],
+  "training": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_origins": 32,
+    "max_selection_epochs": 160,
+    "patience": 15,
+    "min_delta": 1e-05,
+    "grad_norm_clip": 1.0,
+    "loss": "unweighted mean seven-quantile pinball over valid complete training origins",
+    "device": "CPU",
+    "threads": 2,
+    "deterministic_algorithms": true
+  },
+  "calibration": "identical P0 per-lead signed rolling84 CQR, ceil((n+1)*(1-alpha)) score rank, complete target_end<=origin only, same phase seeds, midpoint collapse, clip[0,1]; confidence80/90/95. Raw and calibrated arms both reported for every architecture/seed",
+  "metrics": "same sample masks/regimes/lead/month/season as P0; WIS, pinball7, medianMAE, coverage,width,IS, lower/upper misses; raw crossings and calibrated nesting; no invented full-distribution CRPS",
+  "gate_90_vs_QRF_CQR": {
+    "coverage_min": 0.9,
+    "coverage_drop_max": 0.005,
+    "width_ratio_max": 1.01,
+    "IS_ratio_max": 1.0,
+    "WIS_ratio_max": 1.0,
+    "up_ramp_coverage_gain_min": 0.01,
+    "near_zero_coverage_gain_min": 0.01,
+    "each_target_group_IS_ratio_max": 1.0
+  },
+  "selection": "architecture on 2014 validation seed-mean only: among calibrated candidates passing the joint gate minimize WIS; otherwise retain QRF_CQR. No seed selection/ensembling. All models/seeds reported; no new search from evaluation feedback",
+  "inference": "farm-macro then neural-seed mean, mean/std across3seeds separately; paired circular14-calendar-day1000draws seed20261107, synchronized farms/methods and fixed seeds, missing dates zero-count. Intervals conditional on fitted models, not population/model-selection guarantees",
+  "scope": "all dates previously inspected; retrospective development. Single fixed architecture and training budget per family, no claim all temporal networks are superior or inferior. Convergence/epoch-cap diagnostics retained",
+  "publication": "source, aggregate scores, protocols, environment pins, traces and notes only; raw data, per-origin predictions, preprocessors and weights stay local"
+}

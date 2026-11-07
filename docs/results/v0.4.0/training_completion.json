@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "version": "0.4.0",
+  "farms": 17,
+  "architectures": [
+    "MLP",
+    "TCN",
+    "GRU"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "final_models": 153,
+  "selection_passes": 153,
+  "full_training_refits": 153,
+  "QRF_refits": 0,
+  "elapsed_seconds": 1073.3682939999271,
+  "scope": "historical data, fixed architecture/optimizer budget; no calibration/evaluation labels used for stopping/fitting"
+}

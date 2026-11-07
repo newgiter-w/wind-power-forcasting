@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "models": 153,
+  "selection_epoch_rules_verified": 153,
+  "checkpoint_replays": 153,
+  "checkpoint_replay_max_error": 0.0,
+  "identical_QRF_training_label_budget": true,
+  "all_source_and_input_hashes_match": true,
+  "QRF_forests_unchanged": 17,
+  "internal_split_chronology": true,
+  "scaler_full_proper_training_only": true,
+  "baseline_macro_max_error": 0.0
+}

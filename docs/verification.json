@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "checks": {
     "isolation": {
       "exit_code": 0,
@@ -31,5 +31,29 @@
     "evidence": "docs/results/v0.3.0/release_checks.json",
     "selected": "CQR_signed84",
     "scope": "retrospective, one fixed PIT seed, no candidate passes joint gate"
+  },
+  "p2": {
+    "farms": 17,
+    "architectures": [
+      "MLP",
+      "TCN",
+      "GRU"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "final_models": 153,
+    "selection_passes": 153,
+    "full_training_refits": 153,
+    "QRF_refits": 0,
+    "QRF_forests_unchanged": 17,
+    "same_information_and_label_budget": true,
+    "checkpoint_replay_max_error": 0.0,
+    "baseline_macro_max_error": 0.0,
+    "selected": "QRF_CQR",
+    "evidence": "docs/results/v0.4.0/release_checks.json",
+    "scope": "retrospective fixed-budget models, no ensemble or seed selection"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "source": "2014 validation neural-seed-mean only; historical development data",
+  "eligible_passing": [],
+  "selected": "QRF_CQR",
+  "rule": "minimize seed-mean WIS among joint-gate-passing calibrated candidates; otherwise retain QRF_CQR",
+  "seed_selection": false,
+  "ensemble": false,
+  "evaluation_used_for_selection": false
+}

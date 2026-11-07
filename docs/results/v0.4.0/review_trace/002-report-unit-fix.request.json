@@ -1,0 +1,5 @@
+{
+  "tool": "collaboration.send_message",
+  "target": "/root/p2_integrity_review",
+  "prompt": "The report/template heading now reads 相邻分位对交叉次数（每种子平均）, and both nesting columns explicitly say affected hours per-seed mean. The following paragraph states that one hour may contribute multiple violated adjacent pairs. Regenerated run/REPORT.md; no numbers, metrics, source training/evaluation, gates, or selection changed. Please verify this label-only fix and record final REPORT/p2_report hashes in the review."
+}

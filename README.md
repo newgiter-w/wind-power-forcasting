@@ -2,7 +2,11 @@
 
 本仓库是从现有风电项目中物理复制的独立路线。另一个会话继续原路线，本路线只在独立副本修改。
 
-**当前版本：v0.3.0；状态：P1 固定 QRF 的完整分布与双尾校准比较完成，保留原 CQR 基线。**
+**当前版本：v0.4.0；状态：P2 同输入非交叉 MLP/TCN/GRU 比较完成，保留原 QRF_CQR 基线。**
+
+本轮训练 17 场 × 3 个网络 × 3 个种子，共 153 个最终模型；用相同输入、完整训练标签和 rolling84 CQR 与 QRF 比较。网络原始分位数均非交叉；相同 CQR 后区间缩窄、近零覆盖均值提高，但上爬坡覆盖下降、总体/近零评分未共同改善，没有候选通过联合目标。没有挑选最好种子或做模型集成。
+
+[P2 完整比较报告](docs/results/v0.4.0/REPORT.md) · [均值联合门槛](docs/results/v0.4.0/joint_gates.csv) · [逐种子门槛](docs/results/v0.4.0/joint_gates_by_seed.csv) · [同输入与方法定义](docs/P2_METHODS.md)
 
 本轮固定 17 个风场的原森林，比较七组预测。CDF/PIT 方案保持区间嵌套并在 2012 改善部分分布评分；双尾方案改善部分爬坡覆盖。但没有候选同时满足预先声明的上爬坡、近零覆盖、宽度与评分联合门槛，不替换默认方法。
 
@@ -45,7 +49,7 @@ GitHub版本包含方案、源代码、汇总结果和隔离工具；17GB级历�
 
 本地输出：`experiments/route_a/20261107_p0_v020`；运行方式与资源约束见 [CPU 环境说明](docs/COMPUTE_ENV.md)。P0 使用冻结模型作全场回放、两场从头重训、独立因果 CQR 实现及同步日历时间块分析。运行需要本地原始 CSV 和冻结模型缓存，GitHub 不附这些资产，详见结果目录中的 `input_manifest.json`。
 
-P1 已完成上述固定森林比较。未来候选需要在验证期预定有限改动并另留确认数据；时序网络、缺 NWP 时的 fallback 均为后续独立实验，本版本没有执行。
+P1 已完成上述固定森林比较。P2 时序网络比较也已完成，仍未同时通过联合目标；缺 NWP 时的 fallback 与未查看数据上的确认均未执行。未来候选需要在验证期预定有限改动并另留确认数据。
 
 ## P1 复现
 
@@ -55,3 +59,14 @@ P1 已完成上述固定森林比较。未来候选需要在验证期预定有�
 ```
 
 执行依赖本地 P0 数组及冻结模型；结果目录自动新建，再通过同一入口调用 `route_a/p1_analyze.py --run <目录>`。正式输出在 `experiments/route_a/20261107_p1_v030`。本轮没有新拟合研究森林。完整分布方法是借鉴 CDF/PIT 重校准的改编，**不是**需要另训残差森林的 SCDRF 原算法复现。
+
+## P2 复现
+
+P2 的环境、实际 optimizer 见证和安装锁见 [P2 运行环境](docs/P2_COMPUTE_ENV.md)。只使用本项目 `.venv`，新增 CPU PyTorch，原有 11 个基线依赖不变。
+
+```powershell
+& .venv/Scripts/python.exe tools/run_route_a.py --script route_a/check_p2.py
+& .venv/Scripts/python.exe tools/run_route_a.py --script route_a/p2_train.py
+```
+
+训练后通过同一入口运行 `route_a/p2_evaluate.py --run <目录>` 和 `route_a/p2_analyze.py --run <目录>`。每个网络先在 proper-training 内部按时间选择轮数，再重新初始化并拟合完整 proper-training；校准/验证/评价标签不进入网络训练或早停。原始量化头非交叉不意味着独立水平 CQR 后仍保持嵌套，报告同时保留这项诊断。完整本地输出在 `experiments/route_a/20261107_p2_v040`，权重和逐时数组不上传。

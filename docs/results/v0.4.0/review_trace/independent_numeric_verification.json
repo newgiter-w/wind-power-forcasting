@@ -1,0 +1,350 @@
+{
+  "reviewer": "fresh same-family provisional",
+  "status": "pass",
+  "checks": {
+    "raw_source_hashes": {
+      "count": 29,
+      "all_equal_to_P0": true
+    },
+    "ground_truth": {
+      "farms": [
+        {
+          "year": 2014,
+          "farm": 1,
+          "issued_days": 719,
+          "target_cells": 17256,
+          "exact": true
+        },
+        {
+          "year": 2014,
+          "farm": 2,
+          "issued_days": 719,
+          "target_cells": 17256,
+          "exact": true
+        },
+        {
+          "year": 2014,
+          "farm": 3,
+          "issued_days": 708,
+          "target_cells": 16992,
+          "exact": true
+        },
+        {
+          "year": 2014,
+          "farm": 4,
+          "issued_days": 730,
+          "target_cells": 17520,
+          "exact": true
+        },
+        {
+          "year": 2014,
+          "farm": 5,
+          "issued_days": 730,
+          "target_cells": 17520,
+          "exact": true
+        },
+        {
+          "year": 2014,
+          "farm": 6,
+          "issued_days": 730,
+          "target_cells": 17520,
+          "exact": true
+        },
+        {
+          "year": 2014,
+          "farm": 7,
+          "issued_days": 730,
+          "target_cells": 17520,
+          "exact": true
+        },
+        {
+          "year": 2014,
+          "farm": 8,
+          "issued_days": 730,
+          "target_cells": 17520,
+          "exact": true
+        },
+        {
+          "year": 2014,
+          "farm": 9,
+          "issued_days": 730,
+          "target_cells": 17520,
+          "exact": true
+        },
+        {
+          "year": 2014,
+          "farm": 10,
+          "issued_days": 730,
+          "target_cells": 17520,
+          "exact": true
+        },
+        {
+          "year": 2012,
+          "farm": 1,
+          "issued_days": 1015,
+          "target_cells": 24360,
+          "exact": true
+        },
+        {
+          "year": 2012,
+          "farm": 2,
+          "issued_days": 1015,
+          "target_cells": 24360,
+          "exact": true
+        },
+        {
+          "year": 2012,
+          "farm": 3,
+          "issued_days": 1015,
+          "target_cells": 24360,
+          "exact": true
+        },
+        {
+          "year": 2012,
+          "farm": 4,
+          "issued_days": 1015,
+          "target_cells": 24360,
+          "exact": true
+        },
+        {
+          "year": 2012,
+          "farm": 5,
+          "issued_days": 1015,
+          "target_cells": 24360,
+          "exact": true
+        },
+        {
+          "year": 2012,
+          "farm": 6,
+          "issued_days": 1015,
+          "target_cells": 24360,
+          "exact": true
+        },
+        {
+          "year": 2012,
+          "farm": 7,
+          "issued_days": 1015,
+          "target_cells": 24360,
+          "exact": true
+        }
+      ],
+      "evaluation_type": "real_gt",
+      "normalization": "raw dataset capacity-normalized values; no prediction denominators"
+    },
+    "independent_cqr": [
+      {
+        "year": 2014,
+        "farm": 1,
+        "model": "QRF",
+        "seed": 0,
+        "stage": "validation",
+        "lead_ranks": 6192,
+        "max_error": 0.0
+      },
+      {
+        "year": 2014,
+        "farm": 1,
+        "model": "QRF",
+        "seed": 0,
+        "stage": "evaluation",
+        "lead_ranks": 12816,
+        "max_error": 0.0
+      },
+      {
+        "year": 2014,
+        "farm": 1,
+        "model": "MLP",
+        "seed": 0,
+        "stage": "validation",
+        "lead_ranks": 6192,
+        "max_error": 0.0
+      },
+      {
+        "year": 2014,
+        "farm": 1,
+        "model": "MLP",
+        "seed": 0,
+        "stage": "evaluation",
+        "lead_ranks": 12816,
+        "max_error": 0.0
+      },
+      {
+        "year": 2014,
+        "farm": 1,
+        "model": "TCN",
+        "seed": 0,
+        "stage": "validation",
+        "lead_ranks": 6192,
+        "max_error": 0.0
+      },
+      {
+        "year": 2014,
+        "farm": 1,
+        "model": "TCN",
+        "seed": 0,
+        "stage": "evaluation",
+        "lead_ranks": 12816,
+        "max_error": 0.0
+      },
+      {
+        "year": 2014,
+        "farm": 1,
+        "model": "GRU",
+        "seed": 0,
+        "stage": "validation",
+        "lead_ranks": 6192,
+        "max_error": 0.0
+      },
+      {
+        "year": 2014,
+        "farm": 1,
+        "model": "GRU",
+        "seed": 0,
+        "stage": "evaluation",
+        "lead_ranks": 12816,
+        "max_error": 0.0
+      },
+      {
+        "year": 2012,
+        "farm": 1,
+        "model": "QRF",
+        "seed": 0,
+        "stage": "validation",
+        "lead_ranks": 5616,
+        "max_error": 0.0
+      },
+      {
+        "year": 2012,
+        "farm": 1,
+        "model": "QRF",
+        "seed": 0,
+        "stage": "evaluation",
+        "lead_ranks": 22464,
+        "max_error": 0.0
+      },
+      {
+        "year": 2012,
+        "farm": 1,
+        "model": "MLP",
+        "seed": 0,
+        "stage": "validation",
+        "lead_ranks": 5616,
+        "max_error": 0.0
+      },
+      {
+        "year": 2012,
+        "farm": 1,
+        "model": "MLP",
+        "seed": 0,
+        "stage": "evaluation",
+        "lead_ranks": 22464,
+        "max_error": 0.0
+      },
+      {
+        "year": 2012,
+        "farm": 1,
+        "model": "TCN",
+        "seed": 0,
+        "stage": "validation",
+        "lead_ranks": 5616,
+        "max_error": 0.0
+      },
+      {
+        "year": 2012,
+        "farm": 1,
+        "model": "TCN",
+        "seed": 0,
+        "stage": "evaluation",
+        "lead_ranks": 22464,
+        "max_error": 0.0
+      },
+      {
+        "year": 2012,
+        "farm": 1,
+        "model": "GRU",
+        "seed": 0,
+        "stage": "validation",
+        "lead_ranks": 5616,
+        "max_error": 0.0
+      },
+      {
+        "year": 2012,
+        "farm": 1,
+        "model": "GRU",
+        "seed": 0,
+        "stage": "evaluation",
+        "lead_ranks": 22464,
+        "max_error": 0.0
+      }
+    ],
+    "raw_noncrossing": {
+      "models": 170,
+      "violations": 0
+    },
+    "metrics_per_farm.csv": {
+      "rows": 83100,
+      "max_absolute_error": 8.881784197001252e-16
+    },
+    "scores_per_farm.csv": {
+      "rows": 2720,
+      "max_absolute_error": 9.93129189996722e-17
+    },
+    "boundary_diagnostics.csv": {
+      "rows": 2640,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    "metrics_seed_macro.csv": {
+      "rows": 9840,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    "metrics_macro.csv": {
+      "rows": 3936,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    "scores_seed_macro.csv": {
+      "rows": 320,
+      "max_absolute_error": 9.8879238130678e-17
+    },
+    "scores_macro.csv": {
+      "rows": 128,
+      "max_absolute_error": 4.547473508864641e-13
+    },
+    "P0_controls_exact": {
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    "joint_gates.csv": {
+      "rows": 12,
+      "max_absolute_error": 2.4424906541753444e-15
+    },
+    "joint_gates_by_seed.csv": {
+      "rows": 36,
+      "max_absolute_error": 2.4424906541753444e-15
+    },
+    "selection": {
+      "selected": "QRF_CQR",
+      "mean_gate_pass_count": 0,
+      "seed_gate_pass_count": 0
+    },
+    "paired_calendar_blocks.csv": {
+      "rows": 420,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    "bootstrap_calendar": [
+      {
+        "year": 2014,
+        "calendar_days": 184,
+        "full_calendar": true,
+        "paired_common_draws": true,
+        "absent_issued_dates_zero_count": true
+      },
+      {
+        "year": 2012,
+        "calendar_days": 363,
+        "full_calendar": true,
+        "paired_common_draws": true,
+        "absent_issued_dates_zero_count": true
+      }
+    ]
+  },
+  "scope": "All 17 farms, 170 model-seed prediction sets, both stages, all declared masks; CQR rank replay both farm01 all four families seed0. No model training rerun."
+}

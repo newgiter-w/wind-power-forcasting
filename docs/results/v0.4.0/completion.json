@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "version": "0.4.0",
+  "farms": 17,
+  "architectures": [
+    "MLP",
+    "TCN",
+    "GRU"
+  ],
+  "neural_seeds": [
+    0,
+    1,
+    2
+  ],
+  "neural_final_models": 153,
+  "QRF_refits": 0,
+  "methods": [
+    "QRF_raw",
+    "QRF_CQR",
+    "MLP_raw",
+    "MLP_CQR",
+    "TCN_raw",
+    "TCN_CQR",
+    "GRU_raw",
+    "GRU_CQR"
+  ],
+  "evaluation_seconds": 41.28674010001123,
+  "scope": "historical seed-mean comparisons, no ensemble; all methods share P0 eligible/scored dates and signed84 CQR"
+}

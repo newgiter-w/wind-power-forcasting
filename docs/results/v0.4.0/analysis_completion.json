@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "source_sha256": "d39c7da700aa17cedda507470e91fb3d1a9c46d96294acdc4e884bae75ef0336",
+  "gates": "predeclared joint gate, neural seed mean; per-seed diagnostics also saved"
+}

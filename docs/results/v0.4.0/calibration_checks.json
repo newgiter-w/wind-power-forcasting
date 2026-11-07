@@ -1,0 +1,1192 @@
+[
+  {
+    "year": 2014,
+    "farm": 1,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 1,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 1,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 1,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 1,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 1,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 1,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 1,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 1,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 1,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 2,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 2,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 2,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 2,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 2,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 2,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 2,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 2,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 2,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 2,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 3,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 3,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 3,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 3,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 3,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 3,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 3,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 3,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 3,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 3,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 4,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 4,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 4,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 4,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 4,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 4,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 4,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 4,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 4,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 4,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 5,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 5,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 5,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 5,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 5,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 5,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 5,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 5,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 5,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 5,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 6,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 6,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 6,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 6,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 6,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 6,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 6,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 6,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 6,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 6,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 7,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 7,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 7,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 7,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 7,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 7,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 7,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 7,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 7,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 7,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 8,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 8,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 8,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 8,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 8,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 8,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 8,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 8,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 8,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 8,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 9,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 9,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 9,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 9,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 9,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 9,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 9,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 9,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 9,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 9,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 10,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 10,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 10,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 10,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 10,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 10,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 10,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 10,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 10,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2014,
+    "farm": 10,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 1,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 2,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 3,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 4,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 5,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 6,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "model": "QRF",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "model": "MLP",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "model": "MLP",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "model": "MLP",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "model": "TCN",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "model": "TCN",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "model": "TCN",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "model": "GRU",
+    "seed": 0,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "model": "GRU",
+    "seed": 1,
+    "raw_nontrain_crossings": 0
+  },
+  {
+    "year": 2012,
+    "farm": 7,
+    "model": "GRU",
+    "seed": 2,
+    "raw_nontrain_crossings": 0
+  }
+]

@@ -1,0 +1,298 @@
+{
+  "witness": "fresh agent-follows-doc P2 environment verification",
+  "scope": "Environment and synthetic optimizer fixture checks only; no experiment integrity or effectiveness acceptance.",
+  "project": "D:/Study/wind_probability_route_a",
+  "timestamp_utc": "2026-11-07 09:22:13 UTC",
+  "commands": [
+    {
+      "command": "& .venv/Scripts/python.exe tools/run_route_a.py --script tools/verify_isolation.py",
+      "chunk_id": "0dfe6b",
+      "wall_time_seconds": 0.827795,
+      "exit_code": 0,
+      "original_token_count": 57,
+      "output": "{\"inside_write\": true, \"outside_write_blocked\": true, \"source_read_allowed\": true, \"source_and_dataset_writes_rejected\": true, \"guard_loaded_from\": \"D:\\\\Study\\\\wind_probability_route_a\\\\tools\\\\runtime_guard\\\\sitecustomize.py\"}\r\n"
+    },
+    {
+      "command": "& .venv/Scripts/python.exe tools/run_route_a.py --script route_a/check_p2.py",
+      "chunk_id": "0af274",
+      "wall_time_seconds": 7.2347539,
+      "exit_code": 0,
+      "original_token_count": 186,
+      "output": "{\"fixture_type\": \"synthetic_unit_tests_only\", \"torch\": \"2.8.0+cpu\", \"cuda\": false, \"CPU_threads\": 2, \"causal_block_future_token_invariance\": true, \"checks\": [{\"model\": \"MLP\", \"initial_loss\": 0.025960678234696388, \"final_loss\": 0.010088375769555569, \"optimizer_steps\": 30, \"seconds\": 0.08660560008138418, \"parameters\": 3911, \"seed_repeat_exact\": true}, {\"model\": \"TCN\", \"initial_loss\": 0.026206430047750473, \"final_loss\": 0.0054374136961996555, \"optimizer_steps\": 30, \"seconds\": 0.2542407000437379, \"parameters\": 13095, \"seed_repeat_exact\": true}, {\"model\": \"GRU\", \"initial_loss\": 0.02644922584295273, \"final_loss\": 0.006563213653862476, \"optimizer_steps\": 30, \"seconds\": 0.36822369997389615, \"parameters\": 12439, \"seed_repeat_exact\": true}]}\r\n"
+    }
+  ],
+  "observed_versions": {
+    "executable": "D:\\Study\\wind_probability_route_a\\.venv\\Scripts\\python.exe",
+    "packages": {
+      "Jinja2": "3.1.6",
+      "MarkupSafe": "3.0.3",
+      "filelock": "4.2.4",
+      "fsspec": "2026.9.0",
+      "joblib": "1.4.2",
+      "mpmath": "1.3.0",
+      "networkx": "3.7",
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "pip": "24.2",
+      "python-dateutil": "2.9.0.post0",
+      "pytz": "2024.2",
+      "quantile-forest": "1.4.2",
+      "scikit-learn": "1.5.2",
+      "scipy": "1.14.1",
+      "setuptools": "78.1.0",
+      "six": "1.17.0",
+      "sympy": "1.14.0",
+      "threadpoolctl": "3.5.0",
+      "torch": "2.8.0+cpu",
+      "typing_extensions": "4.16.0",
+      "tzdata": "2024.2"
+    },
+    "python": "3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)]"
+  },
+  "baseline_dependency_checks": [
+    {
+      "name": "numpy",
+      "expected": "2.1.3",
+      "observed": "2.1.3",
+      "matches": true
+    },
+    {
+      "name": "pandas",
+      "expected": "2.2.3",
+      "observed": "2.2.3",
+      "matches": true
+    },
+    {
+      "name": "scipy",
+      "expected": "1.14.1",
+      "observed": "1.14.1",
+      "matches": true
+    },
+    {
+      "name": "scikit-learn",
+      "expected": "1.5.2",
+      "observed": "1.5.2",
+      "matches": true
+    },
+    {
+      "name": "joblib",
+      "expected": "1.4.2",
+      "observed": "1.4.2",
+      "matches": true
+    },
+    {
+      "name": "threadpoolctl",
+      "expected": "3.5.0",
+      "observed": "3.5.0",
+      "matches": true
+    },
+    {
+      "name": "quantile-forest",
+      "expected": "1.4.2",
+      "observed": "1.4.2",
+      "matches": true
+    },
+    {
+      "name": "python-dateutil",
+      "expected": "2.9.0.post0",
+      "observed": "2.9.0.post0",
+      "matches": true
+    },
+    {
+      "name": "pytz",
+      "expected": "2024.2",
+      "observed": "2024.2",
+      "matches": true
+    },
+    {
+      "name": "tzdata",
+      "expected": "2024.2",
+      "observed": "2024.2",
+      "matches": true
+    },
+    {
+      "name": "six",
+      "expected": "1.17.0",
+      "observed": "1.17.0",
+      "matches": true
+    }
+  ],
+  "baseline_pins_all_match": true,
+  "doc_vs_reality": {
+    "p2_witness_commands": "Both execute verbatim with documented results and exit status 0.",
+    "divergences": [
+      "docs/P2_COMPUTE_ENV.md references environment-temporal.lock.txt, which was absent when inspected.",
+      "No .aris/compute/local-windows-cpu.md ledger exists. Existing .aris/compute/local.md contains legacy original-project runtime and invocation; that invocation was not followed because it targets the protected original project."
+    ],
+    "initial_divergences_resolved_by_followup": true
+  },
+  "writes": "Only project-local runtime/cache writes produced by the documented commands and these witness artifacts. No packages installed, source/docs edited, or wind-data training performed.",
+  "result": "pass_after_documentation_followup",
+  "followup_addendum": {
+    "timestamp_utc": "2026-11-07 09:23:58 UTC",
+    "reason": "Targeted follow-up after doc lock-path clarification and active Route-A ledger creation.",
+    "documents_read": [
+      "docs/P2_COMPUTE_ENV.md",
+      ".aris/compute/local-windows-cpu.md",
+      ".aris/compute/route-a-temporal-spec.json",
+      "docs/environment-temporal.lock.txt"
+    ],
+    "commands": [
+      {
+        "command": "& .venv/Scripts/python.exe tools/run_route_a.py --script tools/verify_isolation.py",
+        "chunk_id": "7f059c",
+        "wall_time_seconds": 0.8884066,
+        "exit_code": 0,
+        "original_token_count": 57,
+        "output": "{\"inside_write\": true, \"outside_write_blocked\": true, \"source_read_allowed\": true, \"source_and_dataset_writes_rejected\": true, \"guard_loaded_from\": \"D:\\\\Study\\\\wind_probability_route_a\\\\tools\\\\runtime_guard\\\\sitecustomize.py\"}\r\n"
+      },
+      {
+        "command": "& .venv/Scripts/python.exe tools/run_route_a.py --script route_a/check_p2.py",
+        "chunk_id": "b66f17",
+        "wall_time_seconds": 8.7313154,
+        "exit_code": 0,
+        "original_token_count": 186,
+        "output": "{\"fixture_type\": \"synthetic_unit_tests_only\", \"torch\": \"2.8.0+cpu\", \"cuda\": false, \"CPU_threads\": 2, \"causal_block_future_token_invariance\": true, \"checks\": [{\"model\": \"MLP\", \"initial_loss\": 0.025960678234696388, \"final_loss\": 0.010088375769555569, \"optimizer_steps\": 30, \"seconds\": 0.08156089996919036, \"parameters\": 3911, \"seed_repeat_exact\": true}, {\"model\": \"TCN\", \"initial_loss\": 0.026206430047750473, \"final_loss\": 0.0054374136961996555, \"optimizer_steps\": 30, \"seconds\": 0.25567109999246895, \"parameters\": 13095, \"seed_repeat_exact\": true}, {\"model\": \"GRU\", \"initial_loss\": 0.02644922584295273, \"final_loss\": 0.006563213653862476, \"optimizer_steps\": 30, \"seconds\": 0.34718949999660254, \"parameters\": 12439, \"seed_repeat_exact\": true}]}\r\n"
+      }
+    ],
+    "lock_verification": {
+      "lock_path": "docs/environment-temporal.lock.txt",
+      "checks": [
+        {
+          "package": "filelock",
+          "expected": "4.2.4",
+          "observed": "4.2.4",
+          "matches": true
+        },
+        {
+          "package": "fsspec",
+          "expected": "2026.9.0",
+          "observed": "2026.9.0",
+          "matches": true
+        },
+        {
+          "package": "Jinja2",
+          "expected": "3.1.6",
+          "observed": "3.1.6",
+          "matches": true
+        },
+        {
+          "package": "joblib",
+          "expected": "1.4.2",
+          "observed": "1.4.2",
+          "matches": true
+        },
+        {
+          "package": "MarkupSafe",
+          "expected": "3.0.3",
+          "observed": "3.0.3",
+          "matches": true
+        },
+        {
+          "package": "mpmath",
+          "expected": "1.3.0",
+          "observed": "1.3.0",
+          "matches": true
+        },
+        {
+          "package": "networkx",
+          "expected": "3.7",
+          "observed": "3.7",
+          "matches": true
+        },
+        {
+          "package": "numpy",
+          "expected": "2.1.3",
+          "observed": "2.1.3",
+          "matches": true
+        },
+        {
+          "package": "pandas",
+          "expected": "2.2.3",
+          "observed": "2.2.3",
+          "matches": true
+        },
+        {
+          "package": "python-dateutil",
+          "expected": "2.9.0.post0",
+          "observed": "2.9.0.post0",
+          "matches": true
+        },
+        {
+          "package": "pytz",
+          "expected": "2024.2",
+          "observed": "2024.2",
+          "matches": true
+        },
+        {
+          "package": "quantile-forest",
+          "expected": "1.4.2",
+          "observed": "1.4.2",
+          "matches": true
+        },
+        {
+          "package": "scikit-learn",
+          "expected": "1.5.2",
+          "observed": "1.5.2",
+          "matches": true
+        },
+        {
+          "package": "scipy",
+          "expected": "1.14.1",
+          "observed": "1.14.1",
+          "matches": true
+        },
+        {
+          "package": "setuptools",
+          "expected": "78.1.0",
+          "observed": "78.1.0",
+          "matches": true
+        },
+        {
+          "package": "six",
+          "expected": "1.17.0",
+          "observed": "1.17.0",
+          "matches": true
+        },
+        {
+          "package": "sympy",
+          "expected": "1.14.0",
+          "observed": "1.14.0",
+          "matches": true
+        },
+        {
+          "package": "threadpoolctl",
+          "expected": "3.5.0",
+          "observed": "3.5.0",
+          "matches": true
+        },
+        {
+          "package": "torch",
+          "expected": "2.8.0+cpu",
+          "observed": "2.8.0+cpu",
+          "matches": true
+        },
+        {
+          "package": "typing_extensions",
+          "expected": "4.16.0",
+          "observed": "4.16.0",
+          "matches": true
+        },
+        {
+          "package": "tzdata",
+          "expected": "2024.2",
+          "observed": "2024.2",
+          "matches": true
+        }
+      ],
+      "all_match": true,
+      "spec_copy_hashes_match": true
+    },
+    "resolved_divergences": [
+      "P2_COMPUTE_ENV.md explicitly names docs/environment-temporal.lock.txt relative to project root and links the adjacent file; all 21 existing lock pins match installed metadata.",
+      "Active .aris/compute/local-windows-cpu.md explicitly supersedes inherited original-project commands, selecting the project venv and route-a-temporal-spec.json. The active spec and public P2_COMPUTE_SPEC.json have identical SHA256 hashes."
+    ],
+    "remaining_doc_vs_reality_divergences": [],
+    "result": "pass"
+  }
+}

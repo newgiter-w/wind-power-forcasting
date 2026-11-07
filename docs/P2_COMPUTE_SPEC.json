@@ -1,0 +1,26 @@
+{
+  "provider": "local-windows-cpu",
+  "project": "D:/Study/wind_probability_route_a",
+  "interpreter": "D:/Study/wind_probability_route_a/.venv/Scripts/python.exe",
+  "base_spec": "requirements-route-a.txt",
+  "addition": "torch==2.8.0+cpu with resolved/pinned transitive dependencies",
+  "source_index": "https://download.pytorch.org/whl/cpu",
+  "device": "cpu",
+  "threads": 2,
+  "determinism": "explicit seeds and torch deterministic algorithms",
+  "gpu_check": "Intel Arc integrated graphics; no NVIDIA CUDA device available",
+  "scope": "install into route-A venv only, preserve all base dependency pins; no system/original-project changes",
+  "kernel_witness": "route_a/check_p2.py real forward/backward/optimizer steps for tiny noncrossing MLP/TCN/GRU fixtures, labelled synthetic tests only",
+  "resolved_additions": {
+    "torch": "2.8.0+cpu",
+    "sympy": "1.14.0",
+    "typing_extensions": "4.16.0",
+    "filelock": "4.2.4",
+    "fsspec": "2026.9.0",
+    "Jinja2": "3.1.6",
+    "networkx": "3.7",
+    "setuptools": "78.1.0",
+    "MarkupSafe": "3.0.3",
+    "mpmath": "1.3.0"
+  }
+}

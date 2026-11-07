@@ -1,0 +1,18 @@
+[
+  {
+    "path": "route_a/p2_protocol.json",
+    "sha256": "289db313fb4239058d252b66299dcff28b404877dc82e7516571a2f11a75a0f2"
+  },
+  {
+    "path": "route_a/p2_models.py",
+    "sha256": "72ae0eb5e49428f48fe6c8b4d68828b9112fcecdc7b2b827c9623369cd8a1283"
+  },
+  {
+    "path": "route_a/p2_train.py",
+    "sha256": "bf8e9dce64a02210dde89d9b525d60568e450065a6d48d1a2569b20d29996e6f"
+  },
+  {
+    "path": "requirements-route-a-temporal.txt",
+    "sha256": "88d9ae18e2f29b8bcd4710d0d11a4c5ead83d46afe29d99d2c474597e0f64179"
+  }
+]

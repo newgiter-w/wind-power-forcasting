@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "id": "P2_models",
+      "value": "153",
+      "source": "experiments\\route_a\\20261107_p2_v040\\training_completion.json",
+      "status": "verified",
+      "detail": "'153' found in experiments\\route_a\\20261107_p2_v040\\training_completion.json"
+    },
+    {
+      "id": "P2_QRF_unchanged",
+      "value": "17",
+      "source": "experiments\\route_a\\20261107_p2_v040\\release_checks.json",
+      "status": "verified",
+      "detail": "'17' found in experiments\\route_a\\20261107_p2_v040\\release_checks.json"
+    },
+    {
+      "id": "2014_width_ratio",
+      "value": "0.9302046228728997",
+      "source": "experiments\\route_a\\20261107_p2_v040\\evidence_values.json",
+      "status": "verified",
+      "detail": "'0.9302046228728997' found in experiments\\route_a\\20261107_p2_v040\\evidence_values.json"
+    },
+    {
+      "id": "2014_IS_ratio",
+      "value": "1.0920114441165174",
+      "source": "experiments\\route_a\\20261107_p2_v040\\evidence_values.json",
+      "status": "verified",
+      "detail": "'1.0920114441165174' found in experiments\\route_a\\20261107_p2_v040\\evidence_values.json"
+    },
+    {
+      "id": "2014_up_coverage_gain",
+      "value": "-0.051230066768462756",
+      "source": "experiments\\route_a\\20261107_p2_v040\\evidence_values.json",
+      "status": "verified",
+      "detail": "'-0.051230066768462756' found in experiments\\route_a\\20261107_p2_v040\\evidence_values.json"
+    },
+    {
+      "id": "2014_zero_coverage_gain",
+      "value": "0.068952115524606",
+      "source": "experiments\\route_a\\20261107_p2_v040\\evidence_values.json",
+      "status": "verified",
+      "detail": "'0.068952115524606' found in experiments\\route_a\\20261107_p2_v040\\evidence_values.json"
+    },
+    {
+      "id": "2012_width_ratio",
+      "value": "0.961129288109721",
+      "source": "experiments\\route_a\\20261107_p2_v040\\evidence_values.json",
+      "status": "verified",
+      "detail": "'0.961129288109721' found in experiments\\route_a\\20261107_p2_v040\\evidence_values.json"
+    },
+    {
+      "id": "2012_IS_ratio",
+      "value": "1.0201169303813487",
+      "source": "experiments\\route_a\\20261107_p2_v040\\evidence_values.json",
+      "status": "verified",
+      "detail": "'1.0201169303813487' found in experiments\\route_a\\20261107_p2_v040\\evidence_values.json"
+    },
+    {
+      "id": "2012_up_coverage_gain",
+      "value": "-0.04406005016381842",
+      "source": "experiments\\route_a\\20261107_p2_v040\\evidence_values.json",
+      "status": "verified",
+      "detail": "'-0.04406005016381842' found in experiments\\route_a\\20261107_p2_v040\\evidence_values.json"
+    },
+    {
+      "id": "2012_zero_coverage_gain",
+      "value": "0.015271897307787774",
+      "source": "experiments\\route_a\\20261107_p2_v040\\evidence_values.json",
+      "status": "verified",
+      "detail": "'0.015271897307787774' found in experiments\\route_a\\20261107_p2_v040\\evidence_values.json"
+    }
+  ],
+  "summary": {
+    "verified": 10
+  }
+}
